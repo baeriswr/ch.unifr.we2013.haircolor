@@ -1,6 +1,8 @@
-# Devise Example for Rails 4.0.0
+# Mini project for web engineering course
 
-Example App using devise. http://github.com/plataformatec/devise
+This is a small project site demonstrating the functionality of Apache Solr
+(e.g. sunspot-solr / sunspot-rails). This project site is based on an example
+App using devise. http://github.com/plataformatec/devise
 
 ## Installation
 
@@ -16,7 +18,7 @@ Install the gems:
 bundle install
 ```
 
-This will install Rails 4.0.0, sqlite3 gem and Devise.
+This will install Rails 4.0.0, sqlite3 gem, Devise and rsolr gem.
 
 Rake devise setup task:
 

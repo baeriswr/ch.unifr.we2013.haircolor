@@ -1,4 +1,17 @@
+<% provide(:title, 'Home') %>
 <h1>Welcome to the Hair-Color-Style-Ingredient-Application!</h1>
+
+<div class="articles">
+
+</div>
+
+<div class="search">
+
+</div>
+
+<div class="ingredients">
+
+</div>
 
 <% unless admin_signed_in? -%>
   <p><%= link_to 'Sign up as Admin', new_admin_registration_path %></p>

@@ -1,0 +1,21 @@
+<h1>Article Search</h1>
+
+<%= form_for :search, :url => search_articles_url, :html => { :method => :get } do  %>
+
+    <%= text_field_tag :query %>
+    <%= submit_tag "search" %>
+
+<% end %>
+
+
+<% if @articles.results.size > 0 %>
+
+    <h2>Results</h2>
+    <div class="results">
+    <% @articles.each_hit_with_result do |hit, article| %>
+        <h3><%= article.name %></h3>
+        <strong><%= hit.score %></strong>
+        <p><%= truncate(article.manufacturer, :length => 100) %></p>
+        <% end %>
+    </div>
+<% end %>

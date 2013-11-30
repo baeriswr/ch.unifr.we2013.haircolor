@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  inci_name: MyString
+  forumla: MyString
+  structure: MyString
+  cas_number: MyString
+  ec_number: MyString
+  molecular_weight: MyString
+
+two:
+  inci_name: MyString
+  forumla: MyString
+  structure: MyString
+  cas_number: MyString
+  ec_number: MyString
+  molecular_weight: MyString

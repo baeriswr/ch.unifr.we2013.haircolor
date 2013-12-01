@@ -1,3 +1,11 @@
-<div id="header">
-   <h1><%= link_to "Hair Color", root_path %></h1>
-</div>
+<header>
+  <%= link_to "project", root_path, id: "logo" %>
+  <nav class="topnav">
+	 <%= link_to "Home", root_path %>
+	 <% if user_signed_in? -%>
+		<%= link_to current_user.email, "#" %>
+	 <% else -%>
+		<%= link_to "Sign in", new_user_session_path %>
+	 <% end -%>
+  </nav>
+</header>

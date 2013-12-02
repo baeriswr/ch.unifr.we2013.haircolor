@@ -1,4 +1,8 @@
 class Article < ActiveRecord::Base
+  attr_accessible :image, :manufacturer, :name
+  validates :manufacturer, presence: true
+  validates :name, presence: true, length: { maximum: 50 }, uniqueness: { case_sensitive: false }
+  
   searchable do
     text :name, :default_boost => 2
     text :manufacturer
@@ -16,8 +20,5 @@ class Article < ActiveRecord::Base
       name.downcase.gsub(/^(an?|the)/, '')
     end
   end
-
-
-
-
+  
 end

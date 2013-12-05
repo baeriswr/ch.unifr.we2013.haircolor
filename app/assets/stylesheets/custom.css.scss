@@ -24,13 +24,6 @@ textarea {
   resize: vertical;
 }
 
-.center {
-  text-align: center;
-  h1 {
-	 margin-bottom: 10px;
-  }
-}
-
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
@@ -54,6 +47,40 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+.articles {
+  text-align: justify;
+}
+
+.articles::after {
+  width: 100%;
+  height: 0;
+  display: inline-block;
+  content: "";
+}
+
+.center {
+  text-align: center;
+  h1 {
+	 margin-bottom: 10px;
+  }
+}
+
+.home {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ingredients {
+  text-align: justify;
+}
+
+.ingredients::after {
+  width: 100%;
+  height: 0;
+  display: inline-block;
+  content: "";
 }
 
 #content {
@@ -123,11 +150,12 @@ footer {
 /* forms */
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  width: 100%;
+  width: 50%;
   margin-bottom: 15px;
   @include box_sizing;
 }
 
 input {
   height: auto !important;
+  border-radius: 2em;
 }

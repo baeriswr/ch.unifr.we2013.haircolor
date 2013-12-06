@@ -1,4 +1,4 @@
 class Ingredient < ActiveRecord::Base
-  attr_accessible :inci_name :formula :structure :cas_number :ec_number :molecular_weight
-  has_many :articles
+  #has_many :quantities
+  #has_many :articles, through: :quantities
 end

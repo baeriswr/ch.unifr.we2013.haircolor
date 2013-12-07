@@ -1,3 +1,39 @@
 // Place all the styles related to the UserLinks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#user_email {
+  width: 30em;
+}
+
+#user_password {
+  width: 30em;
+}
+
+#user_password_confirmation {
+  width: 30em;
+}
+
+#user_current_password {
+  width: 30em;
+}
+
+#cancle {
+  width: 12em;
+}
+
+#admin_email {
+  width: 30em;
+}
+
+#admin_password {
+  width: 30em;
+}
+
+#admin_password_confirmation {
+  width: 30em;
+}
+
+#admin_current_password {
+  width: 30em;
+}

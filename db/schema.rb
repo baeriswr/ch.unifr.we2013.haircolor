@@ -68,6 +68,8 @@ ActiveRecord::Schema.define(version: 20131205171539) do
   end
 
   create_table "quantities", force: true do |t|
+    t.integer  "article_id"
+    t.integer  "ingredient_id"
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"

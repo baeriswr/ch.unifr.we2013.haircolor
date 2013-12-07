@@ -9,3 +9,5 @@
 
 +<%= render :partial => "article", :collection => @articles %>
 
+<%= content_for :head, auto_discovery_link_tag(:atom, articles_url(format: "atom")) %>
+

@@ -21,7 +21,7 @@ class ArticlesController < ApplicationController
         keywords(params[:query])
       end
     else
-      @articles = Article.all
+      @articles = Article.order("created_at DESC")
     end
 
 
@@ -39,8 +39,13 @@ class ArticlesController < ApplicationController
     #  format.html # index.html.erb
     #  format.json { render json: @articles }
     #end
+    respond_to do |format|
+      format.html
+      format.atom { render :layout => false }
 
-
+      # we want the RSS feed to redirect permanently to the ATOM feed
+      format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
+    end
 
 
 
@@ -51,15 +56,41 @@ class ArticlesController < ApplicationController
       keywords(params[:query])
     end
 
-
-
-
-
     #redirect_to
   end
 
+  def feed
+    # this will be the name of the feed displayed on the feed reader
+    @name = "FEED articletitle"
+
+    # the news items
+    @articles = Article.order("updated_at desc")
+
+    # this will be our Feed's update timestamp
+    @updated = @articles.first.updated_at unless @articles.empty?
+
+    respond_to do |format|
+      format.atom { render :layout => false }
+
+      # we want the RSS feed to redirect permanently to the ATOM feed
+      format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
+    end
+  end
+
+
+
+
+
   def show
     @article = Article.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.atom { render :layout => false }
+
+      # we want the RSS feed to redirect permanently to the ATOM feed
+      format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
+    end
+
   end
 
 

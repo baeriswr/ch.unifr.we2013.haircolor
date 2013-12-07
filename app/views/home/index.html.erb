@@ -1,13 +1,7 @@
 <% provide(:title, 'Home') %>
 <h1>Welcome to the Hair-Color-Style-Ingredient-Application!</h1>
 
-<div class="articles">
-  <% if !@articles.blank? %>
-	 <% @articles.each do |article| %>
-		<%= image_tag "articles/" + article.image, :alt => article.name, :class => "home" %>
-	 <% end %>
-  <% end %>
-</div>
+
 
 <div class="search">
   <%= form_tag("/search", method: "post") do %>
@@ -25,6 +19,13 @@
   <% end %>
 </div>
 
+<div class="atom">
+
+
+</div>
+
+
+
 <!--
 <% unless admin_signed_in? -%>
   <p><%= link_to 'Sign up as Admin', new_admin_registration_path %></p>
@@ -40,3 +41,8 @@
   <p><%= link_to 'Token Authentication Example', token_path(auth_token: current_user.authentication_token) %></p>
 <% end -%>
 -->
+
+
+
+
+

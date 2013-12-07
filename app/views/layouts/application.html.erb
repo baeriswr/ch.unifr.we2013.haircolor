@@ -5,12 +5,22 @@
     <%= csrf_meta_tag %>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-
+    <%= auto_discovery_link_tag :atom, "/feed" %>
+    <%= auto_discovery_link_tag :rss, "/feed.rss" %>
+    <%= content_for :head %>
     <%= yield(:head) %>
   </head>
   <body>
 	 <%= render "layouts/header" %>
-    <div id="content">
+
+
+     <div id="atom">
+     <%= link_to image_tag('http://upload.wikimedia.org/wikipedia/en/4/43/Feed-icon.svg', size: "28x28"),
+                 articles_url(format: 'atom') %>
+     </div>
+
+
+     <div id="content">
       <%- flash.each do |name, msg| -%>
         <%= content_tag :div, msg, id: "flash_#{name}" if msg.is_a?(String) %>
       <%- end -%>

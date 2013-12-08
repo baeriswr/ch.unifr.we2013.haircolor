@@ -2,6 +2,8 @@
   <%= link_to "project", root_path, id: "logo" %>
   <nav class="topnav">
 	 <%= link_to "Home", root_path %>
+	 <%= link_to "Articles", articles_path %>
+	 <%= link_to "Ingredients", ingredients_path %>
 	 <% if user_signed_in? -%>
 		<%= link_to current_user.email, edit_user_registration_path %>
 		<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
@@ -11,7 +13,6 @@
 	 <% else -%>
 		<%= link_to "Sign in", new_user_session_path %>
 	 <% end -%>
-    <%= link_to "Articles", articles_path %>
   </nav>
 
 </header>

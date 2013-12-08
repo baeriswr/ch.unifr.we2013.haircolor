@@ -5,15 +5,22 @@ class Article < ActiveRecord::Base
   has_many :quantities
   has_many :ingredients, through: :quantities
   
-  #searchable do
-  #  string :name
-  #  string :manufacturer
-  #  time    :created_at
-  #  time    :updated_at
+  searchable do
+    text :name
+    text :manufacturer
+	 text :ingredients do
+		ingredients.map(&:inci_name)
+	 end
+    time :created_at
+    time :updated_at
 
-  #  string  :sort_name do
-  #    name.downcase.gsub(/^(an?|the)/, '')
-  #  end
-  #end
+    string :sort_name do
+      name.downcase.gsub(/^(an?|the)/, '')
+    end
+	 
+	 string :sort_manufacturer do
+		manufacturer.downcase.gsub(/^(an?|the)/, '')
+	 end
+  end
   
 end

@@ -33,10 +33,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 gem 'rsolr'
-gem 'sunspot_rails'
+gem 'sunspot_rails', github: 'sunspot/sunspot', branch: 'master'
 
 group :development do
-  gem 'sunspot_solr'
+  gem 'progress_bar'
+  gem 'sunspot_solr', github: 'sunspot/sunspot', branch: 'master'
 end
 
 

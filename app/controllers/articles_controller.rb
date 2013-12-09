@@ -50,7 +50,10 @@ class ArticlesController < ApplicationController
 
   def search
     @articles = Article.search do
-      keywords(params[:query])
+      fulltext params[:search]
+		
+		with(:created_at).less_than Time.now
+		with(:updated_at).less_than Time.now
     end
 
     #@search = Article.search do

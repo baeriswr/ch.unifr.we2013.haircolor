@@ -2,52 +2,132 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_4.fdt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_c.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_c.nvd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_c.nvm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_c_Lucene41_0.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_c_Lucene41_0.pos" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_c_Lucene41_0.tim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_c_Lucene41_0.tip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_d.fdt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_d.fdx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_d.fnm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_d.nvd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_d.nvm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_d.si" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_d_Lucene41_0.doc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_d_Lucene41_0.pos" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_d_Lucene41_0.tim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/_d_Lucene41_0.tip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/segments_6" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/index/segments_p" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000022" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000023" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/ingredients/show.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/api_tokens.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/apis.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/articles.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/ingredients.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/post.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/posts.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/products.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/trades.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/user_links.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/welcome.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/sunspot-solr-development.log.lck" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_4.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_4.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_4.nvd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_4.nvm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_4.si" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_4_Lucene41_0.doc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_4_Lucene41_0.pos" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_4_Lucene41_0.tim" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_4_Lucene41_0.tip" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_5.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_5.fdx" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_5.fnm" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_5.nvd" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_5.nvm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_5.si" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_5_Lucene41_0.doc" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_5_Lucene41_0.pos" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_5_Lucene41_0.tim" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_5_Lucene41_0.tip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_9.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_9.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_9.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_9.nvd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_9.nvm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_9.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_9_Lucene41_0.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_9_Lucene41_0.pos" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_9_Lucene41_0.tim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_9_Lucene41_0.tip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_a.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_a.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_a.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_a.nvd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_a.nvm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_a.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_a_Lucene41_0.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_a_Lucene41_0.pos" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_a_Lucene41_0.tim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/_a_Lucene41_0.tip" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/segments_1" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/segments_e" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/segments_h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000002" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000003" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000004" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/segments_n" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/index/write.lock" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000005" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000006" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000010" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000011" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000012" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000013" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000014" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000015" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-developmentOLD.pid" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/solr/development/data/index/_4.fnm" afterPath="$PROJECT_DIR$/solr/development/data/index/_c.fnm" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/solr/development/data/index/_5.fdx" afterPath="$PROJECT_DIR$/solr/development/data/index/_c.fdx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/solr/development/data/index/_5.si" afterPath="$PROJECT_DIR$/solr/development/data/index/_c.si" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/index/_4.fdt" afterPath="$PROJECT_DIR$/solr/development/data/index/_4.fdt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/index/_4.fnm" afterPath="$PROJECT_DIR$/solr/development/data/index/_4.fnm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/index/_4.nvd" afterPath="$PROJECT_DIR$/solr/development/data/index/_4.nvd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/index/_4.nvm" afterPath="$PROJECT_DIR$/solr/development/data/index/_4.nvm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/index/_4.si" afterPath="$PROJECT_DIR$/solr/development/data/index/_4.si" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/index/_4_Lucene41_0.doc" afterPath="$PROJECT_DIR$/solr/development/data/index/_4_Lucene41_0.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/index/_4_Lucene41_0.pos" afterPath="$PROJECT_DIR$/solr/development/data/index/_4_Lucene41_0.pos" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/index/_4_Lucene41_0.tim" afterPath="$PROJECT_DIR$/solr/development/data/index/_4_Lucene41_0.tim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/index/_4_Lucene41_0.tip" afterPath="$PROJECT_DIR$/solr/development/data/index/_4_Lucene41_0.tip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/index/segments.gen" afterPath="$PROJECT_DIR$/solr/development/data/index/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000000" afterPath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000000" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000001" afterPath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000001" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000002" afterPath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000002" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000003" afterPath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000003" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000004" afterPath="$PROJECT_DIR$/solr/development/data/tlog/tlog.0000000000000000004" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131205171539_create_quantities.rb" afterPath="$PROJECT_DIR$/db/migrate/20131205171539_create_quantities.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_menu.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_menu.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/article.rb" afterPath="$PROJECT_DIR$/app/models/article.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/articles_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ingredient.rb" afterPath="$PROJECT_DIR$/app/models/ingredient.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ingredients_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/ingredients_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/articles/search.html.erb" afterPath="$PROJECT_DIR$/app/views/articles/search.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" afterPath="$PROJECT_DIR$/solr/pids/development/sunspot-solr-development.pid" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/articles/show.html.erb" afterPath="$PROJECT_DIR$/app/views/articles/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="devise_example.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386592774820" ignored="false" />
     <file path="/Gemfile" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1385217422995" ignored="false" />
-    <file path="/_footer.html.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1385218418016" ignored="false" />
-    <file path="/_header.html.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386422465051" ignored="false" />
-    <file path="/_menu.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1385810351358" ignored="false" />
+    <file path="/_footer.html.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386612847051" ignored="false" />
+    <file path="/_header.html.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386602294326" ignored="false" />
+    <file path="/_menu.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386603271767" ignored="false" />
     <file path="/routes.rb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386598166860" ignored="false" />
     <file path="/index.html.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386597802136" ignored="false" />
     <file path="/products_controller.rb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1385227084119" ignored="false" />
@@ -58,12 +138,14 @@
     <file path="/search.hmtl.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1385827294577" ignored="false" />
     <file path="/_article.html.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1385818779157" ignored="false" />
     <file path="/seeds.rb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1385828499114" ignored="false" />
-    <file path="/application.html.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386422660778" ignored="false" />
+    <file path="/application.html.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386602479005" ignored="false" />
     <file path="/feed.atom.builder.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386417324527" ignored="false" />
     <file path="/index.atom.builder" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386422396121" ignored="false" />
-    <file path="/custom.css.scss" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386423008799" ignored="false" />
+    <file path="/custom.css.scss" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386601822018" ignored="false" />
     <file path="/ingredient.rb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386594024666" ignored="false" />
     <file path="/search.html.erb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386596308143" ignored="false" />
+    <file path="/base.css" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386614205391" ignored="false" />
+    <file path="/production.rb" changelist="e6dc0606-3bf5-4bf8-ba17-b7ee6c3a0ec6" time="1386604384651" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,91 +165,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="article.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/article.rb">
+      <file leaf-file-name="_menu.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_menu.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="56" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+            <state line="3" column="7" selection-start="19" selection-end="24" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ingredient.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/ingredient.rb">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+            <state line="32" column="39" selection-start="950" selection-end="950" vertical-scroll-proportion="-20.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quantity.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/quantity.rb">
+      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articles_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
+      <file leaf-file-name="_footer.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="33" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
+            <state line="10" column="2" selection-start="269" selection-end="269" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_article.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/articles/_article.html.erb">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="33" column="4" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
+      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="8" column="0" selection-start="421" selection-end="421" vertical-scroll-proportion="0.13452914">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+            <state line="42" column="19" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="173" column="81" selection-start="3806" selection-end="3807" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="12" selection-start="20" selection-end="182" vertical-scroll-proportion="-4.375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="5" selection-start="279" selection-end="279" vertical-scroll-proportion="0.19009216">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/articles/search.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="12" selection-start="25" selection-end="187" vertical-scroll-proportion="-4.375">
+            <state line="21" column="36" selection-start="564" selection-end="564" vertical-scroll-proportion="-11.541667">
               <folding />
             </state>
           </provider>
@@ -191,28 +264,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/articles/search.hmtl.erb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/views/articles/feed.atom.builder.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/feed.atom.builder" />
         <option value="$PROJECT_DIR$/app/views/articles/index.atom.builder" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_menu.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/article.rb" />
-        <option value="$PROJECT_DIR$/app/models/ingredient.rb" />
         <option value="$PROJECT_DIR$/app/views/articles/search.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/article.rb" />
+        <option value="$PROJECT_DIR$/app/models/ingredient.rb" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_menu.erb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/base.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1666" />
-    <option name="y" value="1107" />
+    <option name="x" value="5186" />
+    <option name="y" value="-996" />
     <option name="width" value="1842" />
     <option name="height" value="1045" />
   </component>
@@ -272,6 +345,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise_example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch.unifr.we2013.haircolor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -300,11 +387,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise_example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch.unifr.we2013.haircolor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise_example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch.unifr.we2013.haircolor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -399,6 +526,68 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise_example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch.unifr.we2013.haircolor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise_example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch.unifr.we2013.haircolor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise_example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch.unifr.we2013.haircolor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -723,7 +912,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1666" y="1107" width="1842" height="1045" extended-state="0" />
+    <frame x="5186" y="-996" width="1842" height="1045" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -807,44 +996,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/images/articles/noimg.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/images/noimg.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/product.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/trade.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="4" column="0" selection-start="82" selection-end="82" vertical-scroll-proportion="-2.5">
           <folding />
         </state>
       </provider>
@@ -856,65 +1024,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="32" column="39" selection-start="950" selection-end="950" vertical-scroll-proportion="-20.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ingredient.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_menu.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+        <state line="3" column="7" selection-start="19" selection-end="24" vertical-scroll-proportion="-1.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/quantity.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="10" column="2" selection-start="269" selection-end="269" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="33" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/search.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="25" selection-end="187" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="20" selection-end="182" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/article.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="56" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+        <state line="33" column="4" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="279" selection-end="279" vertical-scroll-proportion="0.19009216">
+        <state line="21" column="36" selection-start="564" selection-end="564" vertical-scroll-proportion="-11.541667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="81" selection-start="3806" selection-end="3807" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="19" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="421" selection-end="421" vertical-scroll-proportion="0.13452914">
           <folding />
         </state>
       </provider>

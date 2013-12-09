@@ -3,7 +3,8 @@
   <head>
     <title>Project | <%= yield(:title) %></title>
     <%= csrf_meta_tag %>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= auto_discovery_link_tag :atom, "/feed" %>
     <%= auto_discovery_link_tag :rss, "/feed.rss" %>
@@ -13,7 +14,7 @@
   <body>
 	 <%= render "layouts/header" %>
 
-
+     <%= render "layouts/menu" %>
      <div id="atom">
      <%= link_to image_tag('http://upload.wikimedia.org/wikipedia/en/4/43/Feed-icon.svg', size: "28x28"),
                  articles_url(format: 'atom') %>

@@ -1,22 +1,22 @@
 <% provide(:title, 'Home') %>
 <h1>Welcome to the Hair-Color-Style-Ingredient-Application!</h1>
 
-
+<div class="articles">
+  <% if !@articles.blank? %>
+	 <% @articles.each do |article| %>
+		<%= link_to image_tag("articles/" + article.image, :alt => article.name, :class => "home"), article_path(article) %>
+	 <% end %>
+  <% end %>
+</div>
 
 <div class="search">
-  <!--<%= form_tag("/search", method: "get") do %>
+
+
+  <%= form_tag search_articles_path, :method => "get" do %>
 	 <%= label_tag(:q, "Search:") %>
-	 <%= text_field_tag(:q) %>
-	 <%= submit_tag("Search") %>
+	 <%= text_field_tag :search, params[:search] %>
+	 <%= submit_tag "Search", :name => nil %>
   <% end %>
-  -->
-  <%= form_for :search, :url => search_articles_url, :html => { :method => :get } do  %>
-      <%= label_tag(:q, "Search:") %>
-      <%= text_field_tag :query %>
-      <%= submit_tag "search" %>
-
-  <% end %>
-
 
 </div>
 
@@ -27,7 +27,7 @@
 <div class="ingredients">
   <% if !@ingredients.blank? %>
 	 <% @ingredients.each do |ingredient| %>
-		<%= image_tag "ingredients/" + ingredient.structure, :alt => ingredient.inci_name, :class => "home" %>
+		<%= link_to image_tag("ingredients/" + ingredient.structure, :alt => ingredient.inci_name, :class => "home"), ingredient_path(ingredient) %>
 	 <% end %>
   <% end %>
 </div>
@@ -36,8 +36,6 @@
 
 
 </div>
-
-
 
 <!--
 <% unless admin_signed_in? -%>
@@ -54,8 +52,5 @@
   <p><%= link_to 'Token Authentication Example', token_path(auth_token: current_user.authentication_token) %></p>
 <% end -%>
 -->
-
-
-
 
 

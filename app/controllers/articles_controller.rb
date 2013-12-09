@@ -46,9 +46,6 @@ class ArticlesController < ApplicationController
       # we want the RSS feed to redirect permanently to the ATOM feed
       format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
     end
-
-
-
   end
 
   def search
@@ -56,8 +53,21 @@ class ArticlesController < ApplicationController
       keywords(params[:query])
     end
 
-    #redirect_to
+    #@search = Article.search do
+    #  keywords(params[:query])
+    #end
+    #@articles = @search.results
+
+    respond_to do |format|
+      format.html
+      format.atom { render :layout => false }
+
+      # we want the RSS feed to redirect permanently to the ATOM feed
+      format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
+    end
+
   end
+
 
   def feed
     # this will be the name of the feed displayed on the feed reader

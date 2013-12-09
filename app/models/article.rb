@@ -1,7 +1,13 @@
 class Article < ActiveRecord::Base
   validates :manufacturer, presence: true
   validates :name, presence: true, length: { maximum: 50 }, uniqueness: { case_sensitive: false }
-  
+
+  searchable do
+    text :name
+    text :manufacturer
+  end
+
+
   #has_many :quantities
   #has_many :ingredients, through: :quantities
   

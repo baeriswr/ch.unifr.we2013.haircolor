@@ -18,4 +18,8 @@
         <p><%= truncate(article.manufacturer, :length => 100) %></p>
         <% end %>
     </div>
+
+<% else %>
+    <p>Your query returned no results.</p>
+
 <% end %>

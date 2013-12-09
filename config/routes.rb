@@ -8,7 +8,7 @@ DeviseExample::Application.routes.draw do
   #get "articles/show"
   #get "articles/search"
 
-
+  get '/search' => 'articles#search'
 
 
   resources :home, only: :index
@@ -18,11 +18,19 @@ DeviseExample::Application.routes.draw do
   #resources :articles
 
   #resources :articles, :only => [ :index, :show] do
+
+  #resources :articles do
+  #  collection do
+  #    post 'search'
+  #  end
+  #end
+
   resources :articles do
     collection do
-      get 'search'
+       get 'search'
     end
   end
+
   #match '/feed' => 'articles#feed',
   get '/feed' => 'articles#feed',
         :as => :feed,

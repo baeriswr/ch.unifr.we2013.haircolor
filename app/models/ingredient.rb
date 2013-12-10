@@ -8,7 +8,7 @@ class Ingredient < ActiveRecord::Base
     text :formula
   end
 
-  has_many :quantities
+  has_many :quantities#, order(quantities.position)
   has_many :articles, through: :quantities
 
 end

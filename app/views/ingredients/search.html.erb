@@ -1,0 +1,33 @@
+<% provide(:title, 'Ingredient Search') %>
+<h1>Ingredient Search</h1>
+
+<div class="search">
+
+
+  <%= form_tag search_ingredients_path, :method => "get" do %>
+      <%= label_tag(:q, "Search:") %>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+  <% end %>
+
+</div>
+
+
+<% if @ingredients.results.size > 0 %>
+
+    <h2>Results</h2>
+    <div class="results">
+    <% @ingredients.each_hit_with_result do |hit, ingredient| %>
+        <h3><%= link_to ingredient.inci_name, ingredient %></h3>
+
+        <strong><%= hit.score %></strong>
+
+
+
+        <% end %>
+    </div>
+
+<% else %>
+    <p>Your query returned no results.</p>
+
+<% end %>

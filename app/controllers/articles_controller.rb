@@ -20,8 +20,12 @@ class ArticlesController < ApplicationController
       @articles = Article.search do
         keywords(params[:query])
       end
+      #@ingredients = @articles.ingredients
     else
       @articles = Article.order("created_at DESC")
+
+      #@ingredients = Ingredient.find_all
+      #@ingredients = @articles.find(1).ingredients
     end
 
 
@@ -56,6 +60,10 @@ class ArticlesController < ApplicationController
 		with(:updated_at).less_than Time.now
     end
 
+
+
+    #@ingredients = @articles.ingredients
+
     #@search = Article.search do
     #  keywords(params[:query])
     #end
@@ -69,6 +77,10 @@ class ArticlesController < ApplicationController
       format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
     end
 
+  end
+
+  def new
+     @article = Article.new
   end
 
 
@@ -90,12 +102,25 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def edit
+    @article = Article.find(params[:id])
+  end
 
+  def update
+    @article = Ingredient.find(params[:id])
+
+    if @article.update(params[:post])
+      redirect_to @article
+    else
+      render 'edit'
+    end
+  end
 
 
 
   def show
     @article = Article.find(params[:id])
+    @ingredients = @article.ingredients
     respond_to do |format|
       format.html
       format.atom { render :layout => false }
@@ -105,6 +130,16 @@ class ArticlesController < ApplicationController
     end
 
   end
+
+  def create
+    @article = Article.new(params[:article].permit(:name, :manufacturer, :image))
+    @article.save
+    @quantity = @article.quantities.build(params[:quantity])
+
+
+    redirect_to @article
+  end
+
 
 
 end

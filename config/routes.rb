@@ -31,13 +31,21 @@ DeviseExample::Application.routes.draw do
     end
   end
 
+  resources :ingredients do
+    collection do
+      get 'search'
+    end
+  end
+
+
+
   #match '/feed' => 'articles#feed',
   get '/feed' => 'articles#feed',
         :as => :feed,
         :defaults => { :format => 'atom' }
 
   resources :trades
-  resources :ingredients
+
 
   root 'home#index'
 

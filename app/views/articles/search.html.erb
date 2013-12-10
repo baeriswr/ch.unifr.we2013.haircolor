@@ -1,20 +1,27 @@
 <% provide(:title, 'Article Search') %>
 <h1>Article Search</h1>
 
-<%= form_for :search, :url => search_articles_url, :html => { :method => :get } do  %>
+<div class="search">
 
-    <%= text_field_tag :query %>
-    <%= submit_tag "search" %>
 
-<% end %>
+  <%= form_tag search_articles_path, :method => "get" do %>
+      <%= label_tag(:q, "Search:") %>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+  <% end %>
+
+</div>
 
 
 <% if @articles.results.size > 0 %>
 
     <h2>Results</h2>
+
+    <%= render :partial => "article", :collection => @articles %>
+
     <div class="results">
     <% @articles.each_hit_with_result do |hit, article| %>
-        <h3><%= article.name %></h3>
+        <h3><%= link_to article.name, article %></h3>
         <strong><%= hit.score %></strong>
         <p><%= truncate(article.manufacturer, :length => 100) %></p>
         <% end %>

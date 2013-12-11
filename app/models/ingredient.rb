@@ -1,3 +1,4 @@
+require 'formtastic'
 class Ingredient < ActiveRecord::Base
 
   #has_many :quantities

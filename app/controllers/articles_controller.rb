@@ -78,11 +78,12 @@ class ArticlesController < ApplicationController
     end
 
   end
-
+=begin
   def new
      @article = Article.new
+     @quantity = Quantity.new
   end
-
+=end
 
   def feed
     # this will be the name of the feed displayed on the feed reader
@@ -130,14 +131,40 @@ class ArticlesController < ApplicationController
     end
 
   end
-
+=begin
   def create
     @article = Article.new(params[:article].permit(:name, :manufacturer, :image))
     @article.save
-    @quantity = @article.quantities.build(params[:quantity])
-
+    # @quantity = @article.quantities.build(params[:quantities].permit(:article_id, :ingredient_id, :position))
+    @quantity = Quantity.new(params[:quantities].permit(:article_id, :ingredient_id, :position))
 
     redirect_to @article
+  end
+=end
+
+  def new
+    @article = Article.new
+    3.times do
+      ingredient = @article.ingredients.build
+      #4.times { @article.answers.build }
+    end
+  end
+
+  def create
+    @article = Article.new(params[:article])
+    if @article.save
+      flash[:notice] = "Successfully created article."
+      redirect_to @article
+    else
+      render :action => 'new'
+    end
+  end
+
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+    flash[:notice] = "Successfully destroyed article."
+    redirect_to articles_url
   end
 
 

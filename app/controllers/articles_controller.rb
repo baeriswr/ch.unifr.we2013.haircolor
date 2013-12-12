@@ -1,6 +1,10 @@
 class ArticlesController < ApplicationController
 
+  # ensure admin for other actions
+  before_filter :check_admin_logged_in!, :except => [:show, :index, :search]
 
+# ensure user or admin logged in for these actions (:only option is optional)
+  before_filter :check_user_logged_in!, :only => [:show, :index, :search]
 
   def index
     #@articles = Article.all
@@ -101,13 +105,20 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @article = Article.find(params[:id])
+    if (admin_signed_in?)
+
+      @article = Article.find(params[:id])
+    else
+       redirect_to article_path
+    end
+
+
   end
 
   def update
-    @article = Ingredient.find(params[:id])
+    @article = Article.find(params[:id])
 
-    if @article.update(params[:post])
+    if @article.update(params.require(:article).permit(:name, :manufacturer, :image, quantities_attributes: [:id, :article_id, :ingredient_id, :position, :_destroy]))
       redirect_to @article
     else
       render 'edit'
@@ -135,13 +146,18 @@ class ArticlesController < ApplicationController
 
 
   def new
-    @article = Article.new
-    3.times do
-      # quantity = @article.quantities.build.build_ingredient
-      quantitiy = @article.quantities.build
-      # quantity = @article.quantities.build
-      # 4.times { @article.answers.build }
+    if(admin_signed_in?)
+      @article = Article.new
+      3.times do
+        # quantity = @article.quantities.build.build_ingredient
+        quantitiy = @article.quantities.build
+        # quantity = @article.quantities.build
+        # 4.times { @article.answers.build }
+      end
+    else
+      redirect_to articles_path
     end
+
   end
 
   def create
@@ -158,30 +174,26 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
-    @article = Article.find(params[:id])
-    @article.destroy
-    flash[:notice] = "Successfully destroyed article."
-    redirect_to articles_url
-  end
+    if(admin_signed_in?)
+      @article = Article.find(params[:id])
+      @article.destroy
+      flash[:notice] = "Successfully destroyed article."
+      redirect_to articles_url
 
-=begin
-    def new
-      @article = Article.new
-      @quantity = Quantity.new
+    else
+      redirect_to articles_path
     end
- =end
-
-=begin
-  def create
-    @article = Article.new(params[:article].permit(:name, :manufacturer, :image))
-    @article.save
-    # @quantity = @article.quantities.build(params[:quantities].permit(:article_id, :ingredient_id, :position))
-    @quantity = Quantity.new(params[:quantities].permit(:article_id, :ingredient_id, :position))
-
-    redirect_to @article
   end
-=end
 
+  private
+  def check_admin_logged_in! # admin must be logged in
+    authenticate_admin!
+  end
+  def check_user_logged_in! # if admin is not logged in, user must be logged in
+    if !admin_signed_in?
+      authenticate_user!
+    end
+  end
 
 
 end

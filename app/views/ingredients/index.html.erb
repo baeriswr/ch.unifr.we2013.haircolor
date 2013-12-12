@@ -1,5 +1,12 @@
 +<h1>Ingredients</h1>
 
+<% if admin_signed_in? %>
+    <div class="adminview">
+      <%= link_to 'New ingredient', new_ingredient_path %>
+
+    </div>
+<%end %>
+
 <div class="search">
 
 

@@ -6,7 +6,7 @@ ruby "2.0.0"
 gem 'rails', '4.0.0'
 
 # Use Devise for user authentication
-gem 'devise', :git => 'git://github.com/plataformatec/devise.git', :ref => '49aebde'
+gem 'devise', '3.0.0.rc'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -36,6 +36,9 @@ gem 'rsolr'
 gem 'sunspot_rails', github: 'sunspot/sunspot', branch: 'master'
 
 gem 'nested_form'
+
+#gem 'protected_attributes'
+
 
 #gem 'formtastic'
 

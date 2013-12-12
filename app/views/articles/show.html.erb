@@ -1,6 +1,21 @@
 <% provide(:title, 'Article') %>
 <h1><%= @article.name %></h1>
 
+<% if admin_signed_in? %>
+    <div class="adminview">
+      <p>
+        <%= link_to 'Edit article', edit_article_path %>
+      </p>
+
+      <p>
+        <%= link_to 'Delete article', article_path, method: :delete%>
+      </p>
+
+
+    </div>
+<%end %>
+
+
 <%= render @article %>
 
 <%= render @ingredients %>

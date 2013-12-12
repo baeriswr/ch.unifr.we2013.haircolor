@@ -1,0 +1,44 @@
+<%= nested_form_for @ingredient do |f| %>
+
+        <% if @ingredient.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@ingredient.errors.count, "error") %> prohibited
+                this ingredient from being saved:</h2>
+              <ul>
+                <% @ingredient.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+        <p>
+          <%= f.label :inci_name,"Ingridient Name"%>
+          <%= f.text_field :inci_name %>
+        </p>
+
+        <p>
+            <%= f.label(:formula, "Formula")     %>
+            <%= f.text_field(:formula) %>
+        </p>
+
+        <p>
+            <%= f.label(:cas_number, "CAS Number")     %>
+            <%= f.text_field :cas_number  %>
+        </p>
+        <p>
+            <%= f.label(:ec_number, "EC Number")     %>
+            <%= f.text_field(:ec_number) %>
+        </p>
+        <p>
+            <%= f.label(:molecular_weight, "Molecular Weight")     %>
+            <%= f.text_field(:molecular_weight) %>
+        </p>
+
+        <p>
+          <%= f.label(:structure, "Structure") %>
+          <%= f.text_field(:structure) %>
+        </p>
+        <p><%= f.submit "Submit" %></p>
+
+
+<% end %>

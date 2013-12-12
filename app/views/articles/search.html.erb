@@ -1,6 +1,13 @@
 <% provide(:title, 'Article Search') %>
 <h1>Article Search</h1>
 
+<% if user_signed_in? %>
+    <div class="adminview">
+      <%= link_to 'New article', new_article_path %>
+
+    </div>
+<%end %>
+
 <div class="search">
 
   <%= form_tag search_articles_path, :method => "get" do %>

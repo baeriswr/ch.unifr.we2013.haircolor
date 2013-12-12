@@ -1,6 +1,21 @@
 <% provide(:title, 'Ingredient') %>
 <h1><%= @ingredient.inci_name %></h1>
 
+<% if admin_signed_in? %>
+    <div class="adminview">
+      <p>
+        <%= link_to 'Edit ingredient', edit_ingredient_path %>
+      </p>
+
+      <p>
+        <%= link_to 'Delete ingredient', ingredient_path, method: :delete%>
+      </p>
+
+
+    </div>
+<%end %>
+
+
 
 <p>
   <%= label(:formula, "Formula")     %>

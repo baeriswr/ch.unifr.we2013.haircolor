@@ -1,3 +1,17 @@
 <div class="input">
-  <%= f.collection_select(:ingredient_id, Ingredient.all, :id, :inci_name, :include_blank => true ) %>
+  <p>
+    <%= f.label(:ingredient, 'Ingredient') %>
+    <%= f.collection_select(:ingredient_id, Ingredient.all, :id, :inci_name, :include_blank => true ) %>
+    <%= f.label(:position, 'Position') %>
+
+    <%= f.text_field(:position) %>
+
+
+    <%= f.link_to_remove "remove" %>
+
+
+
+  </p>
+
+
 </div>

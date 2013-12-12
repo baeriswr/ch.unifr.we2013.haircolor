@@ -78,12 +78,7 @@ class ArticlesController < ApplicationController
     end
 
   end
-=begin
-  def new
-     @article = Article.new
-     @quantity = Quantity.new
-  end
-=end
+
 
   def feed
     # this will be the name of the feed displayed on the feed reader
@@ -122,6 +117,10 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     @ingredients = @article.ingredients
+
+    #Quantity.find_by_ingredient_id(ingredient.id)
+
+    #@quantities = @article.quantities AND Quantity.find_by_ingredient_id(ingredient.id)
     respond_to do |format|
       format.html
       format.atom { render :layout => false }
@@ -131,27 +130,23 @@ class ArticlesController < ApplicationController
     end
 
   end
-=begin
-  def create
-    @article = Article.new(params[:article].permit(:name, :manufacturer, :image))
-    @article.save
-    # @quantity = @article.quantities.build(params[:quantities].permit(:article_id, :ingredient_id, :position))
-    @quantity = Quantity.new(params[:quantities].permit(:article_id, :ingredient_id, :position))
 
-    redirect_to @article
-  end
-=end
 
   def new
     @article = Article.new
     3.times do
-      ingredient = @article.ingredients.build
-      #4.times { @article.answers.build }
+      # quantity = @article.quantities.build.build_ingredient
+      quantitiy = @article.quantities.build
+      # quantity = @article.quantities.build
+      # 4.times { @article.answers.build }
     end
   end
 
   def create
-    @article = Article.new(params[:article])
+    # params.require(:project).permit(:name, tasks_attributes: [:id, :name, :_destroy])
+    @article = Article.new(params.require(:article).permit(:name, :manufacturer, :image, quantities_attributes: [:id, :article_id, :ingredient_id, :position, :_destroy]))
+    #@article = Article.new(params[:article])
+    #@article = Article.new(params[:article])
     if @article.save
       flash[:notice] = "Successfully created article."
       redirect_to @article
@@ -166,6 +161,24 @@ class ArticlesController < ApplicationController
     flash[:notice] = "Successfully destroyed article."
     redirect_to articles_url
   end
+
+=begin
+    def new
+      @article = Article.new
+      @quantity = Quantity.new
+    end
+ =end
+
+=begin
+  def create
+    @article = Article.new(params[:article].permit(:name, :manufacturer, :image))
+    @article.save
+    # @quantity = @article.quantities.build(params[:quantities].permit(:article_id, :ingredient_id, :position))
+    @quantity = Quantity.new(params[:quantities].permit(:article_id, :ingredient_id, :position))
+
+    redirect_to @article
+  end
+=end
 
 
 

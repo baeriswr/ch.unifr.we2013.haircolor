@@ -22,8 +22,10 @@
     <div class="results">
     <% @articles.each_hit_with_result do |hit, article| %>
         <h3><%= link_to article.name, article %></h3>
-        <strong><%= hit.score %></strong>
-        <p><%= truncate(article.manufacturer, :length => 100) %></p>
+          <p><%= label :hitscore, "Hit Score" %>
+        <strong><%= hit.score %></strong>       </p>
+          <p><%= label :manufacturer, "Manufacturer" %>
+          <%= truncate(article.manufacturer, :length => 100) %></p>
         <% end %>
     </div>
 

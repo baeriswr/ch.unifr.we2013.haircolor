@@ -68,6 +68,7 @@ class IngredientsController < ApplicationController
   def show
 	 @ingredient = Ingredient.find(params[:id])
    @articles = @ingredient.articles
+   @quantities = @ingredient.quantities
    respond_to do |format|
      format.html
      format.atom { render :layout => false }

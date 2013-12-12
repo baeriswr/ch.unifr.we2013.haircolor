@@ -1,5 +1,8 @@
-<div class="post">
-    <h2><%= link_to article.name, article %></h2>
-    <div class="manufacturer"><%= article.manufacturer %></h2>
+<h2><%= label :name, "Article Name" %>
+    <%= link_to article.name, article %></h2>
+    <div class="manufacturer">
+      <%= label :manufacturer, "Manufacturer" %>
+      <%= article.manufacturer %></h2>
 
-</div>
+    </div>
+    <%= image_tag("articles/" + article.image) %>

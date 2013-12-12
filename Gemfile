@@ -35,7 +35,9 @@ gem 'jbuilder', '~> 1.2'
 gem 'rsolr'
 gem 'sunspot_rails', github: 'sunspot/sunspot', branch: 'master'
 
-gem 'formtastic'
+gem 'nested_form'
+
+#gem 'formtastic'
 
 group :development do
   gem 'progress_bar'

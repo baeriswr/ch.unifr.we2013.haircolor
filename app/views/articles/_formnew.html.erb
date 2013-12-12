@@ -1,42 +1,38 @@
-<%= semantic_form_for @article do |f| %>
 
 
+<%= nested_form_for @article do |f| %>
 
-    <% if @article.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@article.errors.count, "error") %> prohibited
-            this article from being saved:</h2>
-          <ul>
-            <% @article.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %>
-    <p>
-      <%= f.label :name %><br>
-      <%= f.text_field :name %>
-    </p>
+        <% if @article.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@article.errors.count, "error") %> prohibited
+                this article from being saved:</h2>
+              <ul>
+                <% @article.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+        <p>
+          <%= f.label :name %><br>
+          <%= f.text_field :name %>
+        </p>
 
-    <p>
-      <%= f.label :manufacturer %><br>
-      <%= f.text_field :manufacturer %>
-    </p>
+        <p>
+          <%= f.label :manufacturer %><br>
+          <%= f.text_field :manufacturer %>
+        </p>
 
-    <p>
-      <%= f.label :image %><br>
-      <%= f.text_field :image %>
-    </p>
+        <p>
+          <%= f.label :image %><br>
+          <%= f.text_field :image %>
+        </p>
+
+    <%= f.fields_for :quantities %>
+    <p><%= f.link_to_add "Add an Ingredient", :quantities %></p>
 
 
+        <p><%= f.submit "Submit" %></p>
 
-    <%= f.semantic_fields_for :quantities do |builder| %>
-        <input id="article_quantities_none" name="quantity[ingredient_ids][]" type="hidden" value="" />
-        <%= render 'quantity_fields', :f => builder %>
-    <% end %>
-
-    <p>
-      <%= f.submit %>
-    </p>
 
 <% end %>

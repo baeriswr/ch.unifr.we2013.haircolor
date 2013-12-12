@@ -15,6 +15,7 @@ DeviseExample::Application.routes.draw do
   resources :admins, only: :index
   resources :products
   resources :posts
+  resources :users
   #resources :articles
 
   #resources :articles, :only => [ :index, :show] do

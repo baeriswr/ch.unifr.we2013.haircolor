@@ -39,6 +39,8 @@ gem 'nested_form'
 
 #gem 'formtastic'
 
+gem 'will_paginate'
+
 group :development do
   gem 'progress_bar'
   gem 'sunspot_solr', github: 'sunspot/sunspot', branch: 'master'

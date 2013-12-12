@@ -1,9 +1,13 @@
+##
+# This class represents a hair color article. A hair color article has a name,
+# manufacturer and ingredients. An article has a many to many relationship with
+# an Ingredient, which is represented through a Quantity.
+
 #require 'formtastic'
 
 class Article < ActiveRecord::Base
   validates :manufacturer, presence: true
   validates :name, presence: true, length: { maximum: 50 }, uniqueness: { case_sensitive: false }
-
 
   has_many :quantities
   has_many :ingredients, through: :quantities
@@ -12,21 +16,15 @@ class Article < ActiveRecord::Base
   accepts_nested_attributes_for :quantities
   
   searchable do
-    text :name
+    text :name, :boost => 2.0
     text :manufacturer
 	 text :ingredients do
-		ingredients.map(&:inci_name)
+		ingredients.map { |ingredient| ingredient.inci_name }
 	 end
+	 string :name, :stored => true
+	 string :manufacturer, :stored => true
     time :created_at
     time :updated_at
-
-    string :sort_name do
-      name.downcase.gsub(/^(an?|the)/, '')
-    end
-	 
-	 string :sort_manufacturer do
-		manufacturer.downcase.gsub(/^(an?|the)/, '')
-	 end
   end
   
 end

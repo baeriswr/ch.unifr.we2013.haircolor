@@ -3,7 +3,6 @@
 
 <div class="search">
 
-
   <%= form_tag search_articles_path, :method => "get" do %>
       <%= label_tag(:q, "Search:") %>
       <%= text_field_tag :search, params[:search] %>
@@ -12,24 +11,35 @@
 
 </div>
 
+<% if @search.results.size > 0 %>
 
-<% if @articles.results.size > 0 %>
+  <div class="search_results">
+	 <div class="facets">
+		<h2>Categories</h2>
+		<ul class="facet">
+		  <% for row in @search.facet(:manufacturer).rows -%>
+			 <li><%= link_to(row.value, url_for(:manufacturer => row.value)) %> (<%= row.count %>)</li>
+		  <% end -%>
+		</ul>
+	 </div>
 
-    <h2>Results</h2>
-
-    <%= render :partial => "article", :collection => @articles %>
-
-    <div class="results">
-    <% @articles.each_hit_with_result do |hit, article| %>
-        <h3><%= link_to article.name, article %></h3>
-          <p><%= label :hitscore, "Hit Score" %>
-        <strong><%= hit.score %></strong>       </p>
-          <p><%= label :manufacturer, "Manufacturer" %>
-          <%= truncate(article.manufacturer, :length => 100) %></p>
-        <% end %>
-    </div>
+	 <div class="pagination">
+		<div class="results">
+		  <h2>Results</h2>
+		  <% @search.each_hit_with_result do |hit, article| %>
+			 <div class="result">
+				<h3><%= link_to hit.stored(:name), article %></h3>
+				<div class="score"><%= hit.score %></div>
+				<p><%= truncate(article.manufacturer, :length => 100) %></p>
+			 </div>
+		  <% end %>
+		</div>
+		<%= will_paginate(@search.hits) %>
+	 </div>
+  </div>
 
 <% else %>
+  <div class="results">
     <p>Your query returned no results.</p>
-
+  </div>
 <% end %>

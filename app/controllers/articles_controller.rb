@@ -53,11 +53,13 @@ class ArticlesController < ApplicationController
   end
 
   def search
-    @articles = Article.search do
-      fulltext params[:search]
-		
+    @search = Article.search do
+      keywords params[:search], :highlight => true
 		with(:created_at).less_than Time.now
 		with(:updated_at).less_than Time.now
+		order_by(:updated_at, :desc)
+		paginate(:page => params[:page], :per_page => 15)
+		facet(:manufacturer)
     end
 
 

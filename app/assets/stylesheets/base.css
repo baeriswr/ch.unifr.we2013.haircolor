@@ -44,6 +44,19 @@ a {
     text-align : left;
 }
 
+#search_results {
+	 overflow: hidden;
+}
+
+#facets {
+  width: 30em;
+  float: left;
+}
+
+#pagination {
+  overflow: hidden;
+}
+
 #footer {
     margin-bottom : 10px;
     font-size : 12px;

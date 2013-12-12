@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>Rakefile - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="./README_md.html">README</a>
+  
+    <li class="file"><a href="./Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./app/assets/images/articles/noimg_svg.html">noimg.svg</a>
+  
+    <li class="file"><a href="./app/assets/images/ingredients/noimg_svg.html">noimg.svg</a>
+  
+    <li class="file"><a href="./app/assets/images/noimg_svg.html">noimg.svg</a>
+  
+    <li class="file"><a href="./app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li class="file"><a href="./app/assets/javascripts/articles_js_coffee.html">articles.js.coffee</a>
+  
+    <li class="file"><a href="./app/assets/javascripts/ingredients_js_coffee.html">ingredients.js.coffee</a>
+  
+    <li class="file"><a href="./app/assets/javascripts/post_js_coffee.html">post.js.coffee</a>
+  
+    <li class="file"><a href="./app/assets/javascripts/posts_js_coffee.html">posts.js.coffee</a>
+  
+    <li class="file"><a href="./app/assets/javascripts/products_js_coffee.html">products.js.coffee</a>
+  
+    <li class="file"><a href="./app/assets/javascripts/trades_js_coffee.html">trades.js.coffee</a>
+  
+    <li class="file"><a href="./app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li class="file"><a href="./app/assets/stylesheets/base_css.html">base.css</a>
+  
+    <li class="file"><a href="./app/assets/stylesheets/style_css.html">style.css</a>
+  
+    <li class="file"><a href="./app/views/articles/feed_atom_builder.html">feed.atom.builder</a>
+  
+    <li class="file"><a href="./app/views/articles/index_atom_builder.html">index.atom.builder</a>
+  
+    <li class="file"><a href="./app/views/ingredients/feed_atom_builder.html">feed.atom.builder</a>
+  
+    <li class="file"><a href="./app/views/ingredients/index_atom_builder.html">index.atom.builder</a>
+  
+    <li class="file"><a href="./config_ru.html">config.ru</a>
+  
+    <li class="file"><a href="./db/test_sqlite3.html">test.sqlite3</a>
+  
+    <li class="file"><a href="./doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="./lib/tasks/setup_rake.html">setup.rake</a>
+  
+    <li class="file"><a href="./log/development_log.html">development.log</a>
+  
+    <li class="file"><a href="./log/sunspot-solr-development_log.html">sunspot-solr-development.log</a>
+  
+    <li class="file"><a href="./log/sunspot-solr-development_log_lck.html">sunspot-solr-development.log.lck</a>
+  
+    <li class="file"><a href="./public/404_html.html">404.html</a>
+  
+    <li class="file"><a href="./public/422_html.html">422.html</a>
+  
+    <li class="file"><a href="./public/500_html.html">500.html</a>
+  
+    <li class="file"><a href="./public/favicon_ico.html">favicon.ico</a>
+  
+    <li class="file"><a href="./public/robots_txt.html">robots</a>
+  
+    <li class="file"><a href="./solr/conf/admin-extra_html.html">admin-extra.html</a>
+  
+    <li class="file"><a href="./solr/conf/elevate_xml.html">elevate.xml</a>
+  
+    <li class="file"><a href="./solr/conf/mapping-ISOLatin1Accent_txt.html">mapping-ISOLatin1Accent</a>
+  
+    <li class="file"><a href="./solr/conf/protwords_txt.html">protwords</a>
+  
+    <li class="file"><a href="./solr/conf/schema_xml.html">schema.xml</a>
+  
+    <li class="file"><a href="./solr/conf/scripts_conf.html">scripts.conf</a>
+  
+    <li class="file"><a href="./solr/conf/solrconfig_xml.html">solrconfig.xml</a>
+  
+    <li class="file"><a href="./solr/conf/spellings_txt.html">spellings</a>
+  
+    <li class="file"><a href="./solr/conf/stopwords_txt.html">stopwords</a>
+  
+    <li class="file"><a href="./solr/conf/synonyms_txt.html">synonyms</a>
+  
+    <li class="file"><a href="./solr/development/data/index/write_lock.html">write.lock</a>
+  
+    <li class="file"><a href="./solr/pids/development/sunspot-solr-development_pid.html">sunspot-solr-development.pid</a>
+  
+    <li class="file"><a href="./solr/solr_xml.html">solr.xml</a>
+  
+    <li class="file"><a href="./tmp/pids/server_pid.html">server.pid</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./ActionController.html">ActionController</a>
+  
+    <li><a href="./ActionController/TestCase.html">ActionController::TestCase</a>
+  
+    <li><a href="./ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="./ActiveSupport.html">ActiveSupport</a>
+  
+    <li><a href="./ActiveSupport/TestCase.html">ActiveSupport::TestCase</a>
+  
+    <li><a href="./Admin.html">Admin</a>
+  
+    <li><a href="./AdminTest.html">AdminTest</a>
+  
+    <li><a href="./AdminsController.html">AdminsController</a>
+  
+    <li><a href="./AdminsControllerTest.html">AdminsControllerTest</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Article.html">Article</a>
+  
+    <li><a href="./ArticleTest.html">ArticleTest</a>
+  
+    <li><a href="./ArticlesController.html">ArticlesController</a>
+  
+    <li><a href="./ArticlesControllerTest.html">ArticlesControllerTest</a>
+  
+    <li><a href="./ArticlesHelper.html">ArticlesHelper</a>
+  
+    <li><a href="./ArticlesHelperTest.html">ArticlesHelperTest</a>
+  
+    <li><a href="./CreateArticles.html">CreateArticles</a>
+  
+    <li><a href="./CreateIngredients.html">CreateIngredients</a>
+  
+    <li><a href="./CreatePosts.html">CreatePosts</a>
+  
+    <li><a href="./CreateProducts.html">CreateProducts</a>
+  
+    <li><a href="./CreateQuantities.html">CreateQuantities</a>
+  
+    <li><a href="./CreateTrades.html">CreateTrades</a>
+  
+    <li><a href="./DeviseCreateAdmins.html">DeviseCreateAdmins</a>
+  
+    <li><a href="./DeviseCreateUsers.html">DeviseCreateUsers</a>
+  
+    <li><a href="./DeviseExample.html">DeviseExample</a>
+  
+    <li><a href="./DeviseExample/Application.html">DeviseExample::Application</a>
+  
+    <li><a href="./HomeController.html">HomeController</a>
+  
+    <li><a href="./HomeControllerTest.html">HomeControllerTest</a>
+  
+    <li><a href="./Ingredient.html">Ingredient</a>
+  
+    <li><a href="./IngredientTest.html">IngredientTest</a>
+  
+    <li><a href="./IngredientsController.html">IngredientsController</a>
+  
+    <li><a href="./IngredientsControllerTest.html">IngredientsControllerTest</a>
+  
+    <li><a href="./IngredientsHelper.html">IngredientsHelper</a>
+  
+    <li><a href="./IngredientsHelperTest.html">IngredientsHelperTest</a>
+  
+    <li><a href="./LayoutHelper.html">LayoutHelper</a>
+  
+    <li><a href="./Logger.html">Logger</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Post.html">Post</a>
+  
+    <li><a href="./PostControllerTest.html">PostControllerTest</a>
+  
+    <li><a href="./PostHelper.html">PostHelper</a>
+  
+    <li><a href="./PostHelperTest.html">PostHelperTest</a>
+  
+    <li><a href="./PostTest.html">PostTest</a>
+  
+    <li><a href="./PostsController.html">PostsController</a>
+  
+    <li><a href="./PostsControllerTest.html">PostsControllerTest</a>
+  
+    <li><a href="./PostsHelper.html">PostsHelper</a>
+  
+    <li><a href="./PostsHelperTest.html">PostsHelperTest</a>
+  
+    <li><a href="./Product.html">Product</a>
+  
+    <li><a href="./ProductTest.html">ProductTest</a>
+  
+    <li><a href="./ProductsController.html">ProductsController</a>
+  
+    <li><a href="./ProductsControllerTest.html">ProductsControllerTest</a>
+  
+    <li><a href="./ProductsHelper.html">ProductsHelper</a>
+  
+    <li><a href="./ProductsHelperTest.html">ProductsHelperTest</a>
+  
+    <li><a href="./Quantity.html">Quantity</a>
+  
+    <li><a href="./Trade.html">Trade</a>
+  
+    <li><a href="./TradeTest.html">TradeTest</a>
+  
+    <li><a href="./TradesController.html">TradesController</a>
+  
+    <li><a href="./TradesControllerTest.html">TradesControllerTest</a>
+  
+    <li><a href="./TradesHelper.html">TradesHelper</a>
+  
+    <li><a href="./TradesHelperTest.html">TradesHelperTest</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserTest.html">UserTest</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p># Add your own tasks in files placed in lib/tasks ending in .rake, # for
+example lib/tasks/capistrano.rake, and they will automatically be available
+to Rake.</p>
+
+<p>require File.expand_path(&#39;../config/application&#39;, __FILE__)</p>
+
+<p>DeviseExample::Application.load_tasks</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -6,6 +6,18 @@ class HomeController < ApplicationController
 	 @ingredients = Ingredient.order("updated_at DESC").first(3)
   end
   
+  def about
+    
+  end
+  
+  def contact
+    
+  end
+  
+  def help
+    
+  end
+  
   def token
   end
   

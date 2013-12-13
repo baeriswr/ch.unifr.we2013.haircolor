@@ -63,7 +63,9 @@ class ArticlesController < ApplicationController
 		with(:updated_at).less_than Time.now
 		order_by(:updated_at, :desc)
 		paginate(:page => params[:page], :per_page => 15)
-		facet(:manufacturer)
+		facet(:manufacturer, :ingredients)
+		with(:manufacturer, params[:manufacturer]) if params[:manufacturer].present?
+		with(:ingredients, params[:ingredients]) if params[:ingredients].present?
     end
 
 

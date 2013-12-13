@@ -3,7 +3,6 @@
 
 <div class="search">
 
-
   <%= form_tag search_ingredients_path, :method => "get" do %>
       <%= label_tag(:q, "Search:") %>
       <%= text_field_tag :search, params[:search] %>
@@ -12,20 +11,33 @@
 
 </div>
 
+<% if @search.results.size > 0 %>
 
-<% if @ingredients.results.size > 0 %>
-
-    <h2>Results</h2>
-    <div class="results">
-    <% @ingredients.each_hit_with_result do |hit, ingredient| %>
-        <h3><%= link_to ingredient.inci_name, ingredient %></h3>
-
-        <strong><%= hit.score %></strong>
-
-
-
-        <% end %>
+  <div class="search_results">
+    <div class="facets">
+      <h2>Categories</h2>
+      <ul class="facet">
+	<% for row in @search.facet(:articles).rows -%>
+	  <li><%= link_to(row.value, url_for(:articles => row.value)) %> (<%= row.count %>)</li>
+	<% end -%>
+      </ul>
     </div>
+
+    <div class="pagination">
+      <div class="results">
+	<h2>Results</h2>
+	<% @search.each_hit_with_result do |hit, ingredient| %>
+	  <h3><%= link_to hit.stored(:inci_name), ingredient %></h3>
+	  <div class="score"><%= hit.score %></div>
+	  <p>Formula: <%= hit.stored(:formula) %></p>
+	  <p>CAS number: <%= hit.stored(:cas_number) %></p>
+	  <p>EC number: <%= hit.stored(:ec_number) %></p>
+	  <p>Molecular weight: <%= hit.stored(:molecular_weight) %> Mol</p>
+        <% end %>
+      </div>
+      <%= will_paginate(@search.hits) %>
+    </div>
+  </div>
 
 <% else %>
     <p>Your query returned no results.</p>

@@ -50,11 +50,14 @@ class IngredientsController < ApplicationController
   end
 
   def search
-    @ingredients = Ingredient.search do
-      fulltext params[:search]
-
-      #with(:created_at).less_than Time.now
-      #with(:updated_at).less_than Time.now
+    @search = Ingredient.search do
+      keywords params[:search], :highlight => true
+      with(:created_at).less_than Time.now
+      with(:updated_at).less_than Time.now
+      order_by(:updated_at, :desc)
+      paginate(:page => params[:page], :per_page => 15)
+      facet(:articles)
+      with(:articles, params[:articles]) if params[:articles].present?
     end
 
     #@articles = @ingredients.articles

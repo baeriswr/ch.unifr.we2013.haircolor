@@ -44,16 +44,16 @@ a {
     text-align : left;
 }
 
-#search_results {
+.search_results {
 	 overflow: hidden;
 }
 
-#facets {
-  width: 30em;
+.facets {
+  width: 20em;
   float: left;
 }
 
-#pagination {
+.pagination {
   overflow: hidden;
 }
 

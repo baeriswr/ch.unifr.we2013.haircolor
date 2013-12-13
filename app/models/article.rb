@@ -23,6 +23,9 @@ class Article < ActiveRecord::Base
 	 end
 	 string :name, :stored => true
 	 string :manufacturer, :stored => true
+	 string :ingredients, :multiple => true, :stored => true do
+	   ingredients.map { |ingredient| ingredient.inci_name }
+	 end
     time :created_at
     time :updated_at
   end

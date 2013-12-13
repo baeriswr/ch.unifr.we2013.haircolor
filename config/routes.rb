@@ -3,28 +3,14 @@ DeviseExample::Application.routes.draw do
   devise_for :users, :admins
 
   get '/token' => 'home#token', as: :token
-
-  #get "articles/index"
-  #get "articles/show"
-  #get "articles/search"
-
   get '/search' => 'articles#search'
-
+  get '/about' => 'home#about'
+  get '/contact' => 'home#contact'
+  get '/help' => 'home#help'
 
   resources :home, only: :index
   resources :admins, only: :index
-  resources :products
-  resources :posts
   resources :users
-  #resources :articles
-
-  #resources :articles, :only => [ :index, :show] do
-
-  #resources :articles do
-  #  collection do
-  #    post 'search'
-  #  end
-  #end
 
   resources :articles do
     collection do
@@ -46,8 +32,9 @@ DeviseExample::Application.routes.draw do
         :defaults => { :format => 'atom' }
 
   resources :trades
+  get '/sitemap.xml' => 'sitemap#index',
+      :defaults => { :format => 'xml' }
 
 
   root 'home#index'
-
 end

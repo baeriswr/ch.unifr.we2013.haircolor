@@ -25,7 +25,10 @@
 		<h2>Categories</h2>
 		<ul class="facet">
 		  <% for row in @search.facet(:manufacturer).rows -%>
-			 <li><%= link_to(row.value, url_for(:manufacturer => row.value)) %> (<%= row.count %>)</li>
+			 <li><%= link_to(row.value, articles_path + url_for(:manufacturer => row.value)) %> (<%= row.count %>)</li>
+		  <% end -%>
+		  <% for row in @search.facet(:ingredients).rows -%>
+			 <li><%= link_to(row.value, articles_path + url_for(:ingredients => row.value)) %> (<%= row.count %>)</li>
 		  <% end -%>
 		</ul>
 	 </div>

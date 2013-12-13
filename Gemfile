@@ -43,6 +43,7 @@ gem 'nested_form'
 #gem 'formtastic'
 
 gem 'will_paginate'
+gem 'haml'
 
 group :development do
   gem 'progress_bar'

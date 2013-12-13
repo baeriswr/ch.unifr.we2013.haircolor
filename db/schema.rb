@@ -43,41 +43,21 @@ ActiveRecord::Schema.define(version: 20131205171539) do
 
   create_table "ingredients", force: true do |t|
     t.string   "inci_name",        default: "",          null: false
-    t.string   "formula",          default: "",          null: false
+    t.string   "formula",          default: ""
     t.string   "structure",        default: "noimg.svg", null: false
-    t.string   "cas_number",       default: "",          null: false
+    t.string   "cas_number",       default: ""
     t.string   "ec_number",        default: ""
     t.decimal  "molecular_weight", default: 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "ingredients", ["cas_number"], name: "index_ingredients_on_cas_number", unique: true
   add_index "ingredients", ["inci_name"], name: "index_ingredients_on_inci_name", unique: true
-
-  create_table "posts", force: true do |t|
-    t.string   "title"
-    t.text     "text"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "products", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "quantities", force: true do |t|
     t.integer  "article_id"
     t.integer  "ingredient_id"
     t.integer  "position",      default: 0, null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "trades", force: true do |t|
-    t.string   "trade_name"
-    t.string   "ingredient"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -4,7 +4,7 @@
 <div class="articles">
   <% if !@articles.blank? %>
 	 <% @articles.each do |article| %>
-		<%= link_to image_tag("articles/" + article.image, :alt => article.name, :class => "home"), article_path(article) %>
+		<%= link_to image_tag("articles/" + article.image, :alt => article.name, :class => "home_art"), article_path(article) %>
 	 <% end %>
   <% end %>
 </div>

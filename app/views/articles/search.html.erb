@@ -39,8 +39,8 @@
 		  <% @search.each_hit_with_result do |hit, article| %>
 			 <div class="result">
 				<h3><%= link_to hit.stored(:name), article %></h3>
-				<div class="score"><%= hit.score %></div>
-				<p><%= truncate(article.manufacturer, :length => 100) %></p>
+				<div class="score"><p>Score: <%= hit.score %></p></div>
+				<p>Manufacturer: <%= article.manufacturer %></p>
 			 </div>
 		  <% end %>
 		</div>

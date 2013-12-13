@@ -1,11 +1,9 @@
 
 <h2><%= link_to ingredient.inci_name, ingredient %></h2>
-<div class="position">
-  <p>
-    <%= label :position, "Position" %>
-    <%= Quantity.find_by_ingredient_id(ingredient.id).position      %>
-
-
-  </p>
-
+<div class="content">
+<%= image_tag("ingredients/" + ingredient.structure) %>
+<p>Formula: <%= ingredient.formula %></p>
+<p>CAS number: <%= ingredient.cas_number %></p>
+<p>EC number: <%= ingredient.ec_number %></p>
+<p>Molecular weight: <%= ingredient.molecular_weight %></p>
 </div>

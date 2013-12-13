@@ -11,8 +11,14 @@
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
+# Ignore the Solr data
+/solr/data/*
+/solr/development/*
+/solr/pids/*
+
 # Ignore all logfiles and tempfiles.
 /log/*.log
+/log/*.log.lck
 /tmp
 
 # Files to irgnore

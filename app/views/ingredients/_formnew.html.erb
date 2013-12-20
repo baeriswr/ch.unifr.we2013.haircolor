@@ -1,4 +1,4 @@
-<%= nested_form_for @ingredient do |f| %>
+<%= nested_form_for @ingredient, :html => { :class => "form-horizontal" } do |f| %>
 
         <% if @ingredient.errors.any? %>
             <div id="error_explanation">
@@ -11,34 +11,52 @@
               </ul>
             </div>
         <% end %>
-        <p>
-          <%= f.label :inci_name,"Ingridient Name"%>
-          <%= f.text_field :inci_name %>
-        </p>
 
-        <p>
-            <%= f.label(:formula, "Formula")     %>
-            <%= f.text_field(:formula) %>
-        </p>
+		  <div class="form-group">
+			 <%= f.label 'inci_name', 'Ingridient Name:', class: "col-sm-2 control-label" %>
+			 <div class="col-sm-10">
+				<%= f.text_field 'inci_name', class: "form-control" %>
+			 </div>
+        </div>
 
-        <p>
-            <%= f.label(:cas_number, "CAS Number")     %>
-            <%= f.text_field :cas_number  %>
-        </p>
-        <p>
-            <%= f.label(:ec_number, "EC Number")     %>
-            <%= f.text_field(:ec_number) %>
-        </p>
-        <p>
-            <%= f.label(:molecular_weight, "Molecular Weight")     %>
-            <%= f.text_field(:molecular_weight) %>
-        </p>
+        <div class="form-group">
+            <%= f.label 'formula', 'Formula:', class: "col-sm-2 control-label" %>
+				<div class="col-sm-10">
+				  <%= f.text_field 'formula', class: "form-control" %>
+				</div>
+        </div>
 
-        <p>
-          <%= f.label(:structure, "Structure") %>
-          <%= f.text_field(:structure) %>
-        </p>
-        <p><%= f.submit "Submit" %></p>
+        <div class="form-group">
+            <%= f.label 'cas_number', 'CAS Number:', class: "col-sm-2 control-label" %>
+				<div class="col-sm-10">
+				  <%= f.text_field 'cas_number', class: "form-control" %>
+				</div>
+        </div>
 
+        <div class="form-group">
+            <%= f.label 'ec_number', 'EC Number:', class: "col-sm-2 control-label" %>
+				<div class="col-sm-10">
+				  <%= f.text_field 'ec_number', class: "form-control" %>
+				</div>
+        </div>
 
+        <div class="form-group">
+            <%= f.label 'molecular_weight', 'Molecular Weight:', class: "col-sm-2 control-label" %>
+				<div class="col-sm-10">
+				  <%= f.text_field 'molecular_weight', class: "form-control" %>
+				</div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label 'structure', 'Structure:', class: "col-sm-2 control-label" %>
+			 <div class="col-sm-10">
+				<%= f.text_field 'structure', class: "form-control" %>
+			 </div>
+        </div>
+
+        <div class="form-group">
+			 <div class="col-sm-offset-2 col-sm-10">
+				<%= f.submit "Submit", class: "btn btn-primary" %>
+			 </div>
+		  </div>
 <% end %>

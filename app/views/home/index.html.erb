@@ -1,34 +1,45 @@
 <% provide(:title, 'Home') %>
-<h1>Welcome to the Hair-Color-Style-Ingredient-Application!</h1>
+<div class="container">
+  <div class="text-center">
+	 <h1>Welcome to the Hair-Color-Style-Ingredient-Application!</h1>
+  </div>
+</div>
 
-<div class="articles">
+<div class="container">
   <% if !@articles.blank? %>
+  <div class="row">
 	 <% @articles.each do |article| %>
+		<div class="col-md-4">
 		<%= link_to image_tag("articles/" + article.image, :alt => article.name, :class => "home_art"), article_path(article) %>
+		</div>
 	 <% end %>
+  </div>
   <% end %>
 </div>
 
-<div class="search">
-
-
+<div class="container">
+  <div class="text-center">
   <%= form_tag search_articles_path, :method => "get" do %>
-	 <%= label_tag(:q, "Search:") %>
-	 <%= text_field_tag :search, params[:search] %>
-	 <%= submit_tag "Search", :name => nil %>
+	 <%= label_tag 'search', 'Search:', class: "col-lg-1 control-label" %>
+	 <div class="col-lg-5">
+		<div class="row">
+		  <%= text_field_tag 'search', params[:search], class: "form-control" %>
+		  <%= submit_tag "Search", :name => nil, class: "btn btn-primary" %>
+		</div>
+	 </div>
   <% end %>
-
+  </div>
 </div>
 
-
-
-
-
-<div class="ingredients">
+<div class="container">
   <% if !@ingredients.blank? %>
+  <div class="row">
 	 <% @ingredients.each do |ingredient| %>
+		<div class="col-md-4">
 		<%= link_to image_tag("ingredients/" + ingredient.structure, :alt => ingredient.inci_name, :class => "home"), ingredient_path(ingredient) %>
+		</div>
 	 <% end %>
+  </div>
   <% end %>
 </div>
 

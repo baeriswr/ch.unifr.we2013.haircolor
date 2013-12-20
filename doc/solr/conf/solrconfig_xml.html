@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>solrconfig.xml - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="../../README_md.html">README</a>
+  
+    <li class="file"><a href="../../Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="../../app/assets/images/articles/noimg_svg.html">noimg.svg</a>
+  
+    <li class="file"><a href="../../app/assets/images/ingredients/noimg_svg.html">noimg.svg</a>
+  
+    <li class="file"><a href="../../app/assets/images/noimg_svg.html">noimg.svg</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/applicationCOPY_js.html">applicationCOPY.js</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/articles_js_coffee.html">articles.js.coffee</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/bootstrap_js.html">bootstrap.js</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/bootstrap_min_js.html">bootstrap.min.js</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/ingredients_js_coffee.html">ingredients.js.coffee</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/jquery_min_js.html">jquery.min.js</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/jquery_nested_form_js.html">jquery_nested_form.js</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/nested_form_js.html">nested_form.js</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/post_js_coffee.html">post.js.coffee</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/posts_js_coffee.html">posts.js.coffee</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/products_js_coffee.html">products.js.coffee</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/rails_js.html">rails.js</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/trades_js_coffee.html">trades.js.coffee</a>
+  
+    <li class="file"><a href="../../app/assets/javascripts/users_js_coffee.html">users.js.coffee</a>
+  
+    <li class="file"><a href="../../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li class="file"><a href="../../app/assets/stylesheets/bootstrap-theme_css.html">bootstrap-theme.css</a>
+  
+    <li class="file"><a href="../../app/assets/stylesheets/bootstrap_css.html">bootstrap.css</a>
+  
+    <li class="file"><a href="../../app/assets/stylesheets/users_css_scss.html">users.css.scss</a>
+  
+    <li class="file"><a href="../../app/views/articles/feed_atom_builder.html">feed.atom.builder</a>
+  
+    <li class="file"><a href="../../app/views/articles/index_atom_builder.html">index.atom.builder</a>
+  
+    <li class="file"><a href="../../app/views/ingredients/feed_atom_builder.html">feed.atom.builder</a>
+  
+    <li class="file"><a href="../../app/views/ingredients/index_atom_builder.html">index.atom.builder</a>
+  
+    <li class="file"><a href="../../app/views/sitemap/index_xml_builder.html">index.xml.builder</a>
+  
+    <li class="file"><a href="../../config_ru.html">config.ru</a>
+  
+    <li class="file"><a href="../../db/test_sqlite3.html">test.sqlite3</a>
+  
+    <li class="file"><a href="../../doc/ActionController_html.html">ActionController.html</a>
+  
+    <li class="file"><a href="../../doc/ActionController/TestCase_html.html">TestCase.html</a>
+  
+    <li class="file"><a href="../../doc/ActiveRecord_html.html">ActiveRecord.html</a>
+  
+    <li class="file"><a href="../../doc/ActiveSupport_html.html">ActiveSupport.html</a>
+  
+    <li class="file"><a href="../../doc/ActiveSupport/TestCase_html.html">TestCase.html</a>
+  
+    <li class="file"><a href="../../doc/Admin_html.html">Admin.html</a>
+  
+    <li class="file"><a href="../../doc/AdminTest_html.html">AdminTest.html</a>
+  
+    <li class="file"><a href="../../doc/AdminsController_html.html">AdminsController.html</a>
+  
+    <li class="file"><a href="../../doc/AdminsControllerTest_html.html">AdminsControllerTest.html</a>
+  
+    <li class="file"><a href="../../doc/ApplicationController_html.html">ApplicationController.html</a>
+  
+    <li class="file"><a href="../../doc/ApplicationHelper_html.html">ApplicationHelper.html</a>
+  
+    <li class="file"><a href="../../doc/Article_html.html">Article.html</a>
+  
+    <li class="file"><a href="../../doc/ArticleTest_html.html">ArticleTest.html</a>
+  
+    <li class="file"><a href="../../doc/ArticlesController_html.html">ArticlesController.html</a>
+  
+    <li class="file"><a href="../../doc/ArticlesControllerTest_html.html">ArticlesControllerTest.html</a>
+  
+    <li class="file"><a href="../../doc/ArticlesHelper_html.html">ArticlesHelper.html</a>
+  
+    <li class="file"><a href="../../doc/ArticlesHelperTest_html.html">ArticlesHelperTest.html</a>
+  
+    <li class="file"><a href="../../doc/CreateArticles_html.html">CreateArticles.html</a>
+  
+    <li class="file"><a href="../../doc/CreateIngredients_html.html">CreateIngredients.html</a>
+  
+    <li class="file"><a href="../../doc/CreatePosts_html.html">CreatePosts.html</a>
+  
+    <li class="file"><a href="../../doc/CreateProducts_html.html">CreateProducts.html</a>
+  
+    <li class="file"><a href="../../doc/CreateQuantities_html.html">CreateQuantities.html</a>
+  
+    <li class="file"><a href="../../doc/CreateTrades_html.html">CreateTrades.html</a>
+  
+    <li class="file"><a href="../../doc/DeviseCreateAdmins_html.html">DeviseCreateAdmins.html</a>
+  
+    <li class="file"><a href="../../doc/DeviseCreateUsers_html.html">DeviseCreateUsers.html</a>
+  
+    <li class="file"><a href="../../doc/DeviseExample_html.html">DeviseExample.html</a>
+  
+    <li class="file"><a href="../../doc/DeviseExample/Application_html.html">Application.html</a>
+  
+    <li class="file"><a href="../../doc/Gemfile_html.html">Gemfile.html</a>
+  
+    <li class="file"><a href="../../doc/Gemfile_lock_html.html">Gemfile_lock.html</a>
+  
+    <li class="file"><a href="../../doc/HomeController_html.html">HomeController.html</a>
+  
+    <li class="file"><a href="../../doc/HomeControllerTest_html.html">HomeControllerTest.html</a>
+  
+    <li class="file"><a href="../../doc/Ingredient_html.html">Ingredient.html</a>
+  
+    <li class="file"><a href="../../doc/IngredientTest_html.html">IngredientTest.html</a>
+  
+    <li class="file"><a href="../../doc/IngredientsController_html.html">IngredientsController.html</a>
+  
+    <li class="file"><a href="../../doc/IngredientsControllerTest_html.html">IngredientsControllerTest.html</a>
+  
+    <li class="file"><a href="../../doc/IngredientsHelper_html.html">IngredientsHelper.html</a>
+  
+    <li class="file"><a href="../../doc/IngredientsHelperTest_html.html">IngredientsHelperTest.html</a>
+  
+    <li class="file"><a href="../../doc/LayoutHelper_html.html">LayoutHelper.html</a>
+  
+    <li class="file"><a href="../../doc/Logger_html.html">Logger.html</a>
+  
+    <li class="file"><a href="../../doc/Object_html.html">Object.html</a>
+  
+    <li class="file"><a href="../../doc/Post_html.html">Post.html</a>
+  
+    <li class="file"><a href="../../doc/PostControllerTest_html.html">PostControllerTest.html</a>
+  
+    <li class="file"><a href="../../doc/PostHelper_html.html">PostHelper.html</a>
+  
+    <li class="file"><a href="../../doc/PostHelperTest_html.html">PostHelperTest.html</a>
+  
+    <li class="file"><a href="../../doc/PostTest_html.html">PostTest.html</a>
+  
+    <li class="file"><a href="../../doc/PostsController_html.html">PostsController.html</a>
+  
+    <li class="file"><a href="../../doc/PostsControllerTest_html.html">PostsControllerTest.html</a>
+  
+    <li class="file"><a href="../../doc/PostsHelper_html.html">PostsHelper.html</a>
+  
+    <li class="file"><a href="../../doc/PostsHelperTest_html.html">PostsHelperTest.html</a>
+  
+    <li class="file"><a href="../../doc/Product_html.html">Product.html</a>
+  
+    <li class="file"><a href="../../doc/ProductTest_html.html">ProductTest.html</a>
+  
+    <li class="file"><a href="../../doc/ProductsController_html.html">ProductsController.html</a>
+  
+    <li class="file"><a href="../../doc/ProductsControllerTest_html.html">ProductsControllerTest.html</a>
+  
+    <li class="file"><a href="../../doc/ProductsHelper_html.html">ProductsHelper.html</a>
+  
+    <li class="file"><a href="../../doc/ProductsHelperTest_html.html">ProductsHelperTest.html</a>
+  
+    <li class="file"><a href="../../doc/Quantity_html.html">Quantity.html</a>
+  
+    <li class="file"><a href="../../doc/README_md_html.html">README_md.html</a>
+  
+    <li class="file"><a href="../../doc/Rakefile_html.html">Rakefile.html</a>
+  
+    <li class="file"><a href="../../doc/Trade_html.html">Trade.html</a>
+  
+    <li class="file"><a href="../../doc/TradeTest_html.html">TradeTest.html</a>
+  
+    <li class="file"><a href="../../doc/TradesController_html.html">TradesController.html</a>
+  
+    <li class="file"><a href="../../doc/TradesControllerTest_html.html">TradesControllerTest.html</a>
+  
+    <li class="file"><a href="../../doc/TradesHelper_html.html">TradesHelper.html</a>
+  
+    <li class="file"><a href="../../doc/TradesHelperTest_html.html">TradesHelperTest.html</a>
+  
+    <li class="file"><a href="../../doc/User_html.html">User.html</a>
+  
+    <li class="file"><a href="../../doc/UserTest_html.html">UserTest.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/images/articles/noimg_svg_html.html">noimg_svg.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/images/ingredients/noimg_svg_html.html">noimg_svg.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/images/noimg_svg_html.html">noimg_svg.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/javascripts/application_js_html.html">application_js.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/javascripts/articles_js_coffee_html.html">articles_js_coffee.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/javascripts/ingredients_js_coffee_html.html">ingredients_js_coffee.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/javascripts/post_js_coffee_html.html">post_js_coffee.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/javascripts/posts_js_coffee_html.html">posts_js_coffee.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/javascripts/products_js_coffee_html.html">products_js_coffee.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/javascripts/trades_js_coffee_html.html">trades_js_coffee.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/stylesheets/application_css_html.html">application_css.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/stylesheets/base_css_html.html">base_css.html</a>
+  
+    <li class="file"><a href="../../doc/app/assets/stylesheets/style_css_html.html">style_css.html</a>
+  
+    <li class="file"><a href="../../doc/app/views/articles/feed_atom_builder_html.html">feed_atom_builder.html</a>
+  
+    <li class="file"><a href="../../doc/app/views/articles/index_atom_builder_html.html">index_atom_builder.html</a>
+  
+    <li class="file"><a href="../../doc/app/views/ingredients/feed_atom_builder_html.html">feed_atom_builder.html</a>
+  
+    <li class="file"><a href="../../doc/app/views/ingredients/index_atom_builder_html.html">index_atom_builder.html</a>
+  
+    <li class="file"><a href="../../doc/config_ru_html.html">config_ru.html</a>
+  
+    <li class="file"><a href="../../doc/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="../../doc/db/test_sqlite3_html.html">test_sqlite3.html</a>
+  
+    <li class="file"><a href="../../doc/doc/created_rid_html.html">created_rid.html</a>
+  
+    <li class="file"><a href="../../doc/index_html.html">index.html</a>
+  
+    <li class="file"><a href="../../doc/js/darkfish_js.html">darkfish.js</a>
+  
+    <li class="file"><a href="../../doc/js/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../doc/js/search_js.html">search.js</a>
+  
+    <li class="file"><a href="../../doc/lib/tasks/setup_rake_html.html">setup_rake.html</a>
+  
+    <li class="file"><a href="../../doc/log/development_log_html.html">development_log.html</a>
+  
+    <li class="file"><a href="../../doc/rdoc_css.html">rdoc.css</a>
+  
+    <li class="file"><a href="../../lib/tasks/setup_rake.html">setup.rake</a>
+  
+    <li class="file"><a href="../../log/development_log.html">development.log</a>
+  
+    <li class="file"><a href="../../log/sunspot-solr-development_log.html">sunspot-solr-development.log</a>
+  
+    <li class="file"><a href="../../log/sunspot-solr-development_log_lck.html">sunspot-solr-development.log.lck</a>
+  
+    <li class="file"><a href="../../public/404_html.html">404.html</a>
+  
+    <li class="file"><a href="../../public/422_html.html">422.html</a>
+  
+    <li class="file"><a href="../../public/500_html.html">500.html</a>
+  
+    <li class="file"><a href="../../public/assets/application-0877f654f52472756c042cc3f903a537_css.html">application-0877f654f52472756c042cc3f903a537.css</a>
+  
+    <li class="file"><a href="../../public/assets/application-1ff11bd73a3080e126abd3601bee0de3_js.html">application-1ff11bd73a3080e126abd3601bee0de3.js</a>
+  
+    <li class="file"><a href="../../public/assets/application-6d85b5f2cab314abba958a920a403589_css.html">application-6d85b5f2cab314abba958a920a403589.css</a>
+  
+    <li class="file"><a href="../../public/assets/articles/noimg-50f2fdd67877f75f1e8467e1c32a0710_svg.html">noimg-50f2fdd67877f75f1e8467e1c32a0710.svg</a>
+  
+    <li class="file"><a href="../../public/assets/ingredients/noimg-50f2fdd67877f75f1e8467e1c32a0710_svg.html">noimg-50f2fdd67877f75f1e8467e1c32a0710.svg</a>
+  
+    <li class="file"><a href="../../public/assets/manifest-a99a4b11573383b8921cc1b224075e54_json.html">manifest-a99a4b11573383b8921cc1b224075e54.json</a>
+  
+    <li class="file"><a href="../../public/assets/noimg-50f2fdd67877f75f1e8467e1c32a0710_svg.html">noimg-50f2fdd67877f75f1e8467e1c32a0710.svg</a>
+  
+    <li class="file"><a href="../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li class="file"><a href="../../public/javascripts/application_js.html">application.js</a>
+  
+    <li class="file"><a href="../../public/javascripts/articles_js_coffee.html">articles.js.coffee</a>
+  
+    <li class="file"><a href="../../public/javascripts/ingredients_js_coffee.html">ingredients.js.coffee</a>
+  
+    <li class="file"><a href="../../public/javascripts/jquery_js.html">jquery.js</a>
+  
+    <li class="file"><a href="../../public/javascripts/jquery_min_js.html">jquery.min.js</a>
+  
+    <li class="file"><a href="../../public/javascripts/jquery_nested_form_js.html">jquery_nested_form.js</a>
+  
+    <li class="file"><a href="../../public/javascripts/jquery_ujs_js.html">jquery_ujs.js</a>
+  
+    <li class="file"><a href="../../public/javascripts/nested_form_js.html">nested_form.js</a>
+  
+    <li class="file"><a href="../../public/javascripts/post_js_coffee.html">post.js.coffee</a>
+  
+    <li class="file"><a href="../../public/javascripts/posts_js_coffee.html">posts.js.coffee</a>
+  
+    <li class="file"><a href="../../public/javascripts/products_js_coffee.html">products.js.coffee</a>
+  
+    <li class="file"><a href="../../public/javascripts/rails_js.html">rails.js</a>
+  
+    <li class="file"><a href="../../public/javascripts/trades_js_coffee.html">trades.js.coffee</a>
+  
+    <li class="file"><a href="../../public/robots_txt.html">robots</a>
+  
+    <li class="file"><a href="../../solr/conf/admin-extra_html.html">admin-extra.html</a>
+  
+    <li class="file"><a href="../../solr/conf/elevate_xml.html">elevate.xml</a>
+  
+    <li class="file"><a href="../../solr/conf/mapping-ISOLatin1Accent_txt.html">mapping-ISOLatin1Accent</a>
+  
+    <li class="file"><a href="../../solr/conf/protwords_txt.html">protwords</a>
+  
+    <li class="file"><a href="../../solr/conf/schema_xml.html">schema.xml</a>
+  
+    <li class="file"><a href="../../solr/conf/scripts_conf.html">scripts.conf</a>
+  
+    <li class="file"><a href="../../solr/conf/solrconfig_xml.html">solrconfig.xml</a>
+  
+    <li class="file"><a href="../../solr/conf/spellings_txt.html">spellings</a>
+  
+    <li class="file"><a href="../../solr/conf/stopwords_txt.html">stopwords</a>
+  
+    <li class="file"><a href="../../solr/conf/synonyms_txt.html">synonyms</a>
+  
+    <li class="file"><a href="../../solr/development/data/index/write_lock.html">write.lock</a>
+  
+    <li class="file"><a href="../../solr/pids/development/sunspot-solr-development_pid.html">sunspot-solr-development.pid</a>
+  
+    <li class="file"><a href="../../solr/solr_xml.html">solr.xml</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../ActionController.html">ActionController</a>
+  
+    <li><a href="../../ActionController/TestCase.html">ActionController::TestCase</a>
+  
+    <li><a href="../../ActiveRecord.html">ActiveRecord</a>
+  
+    <li><a href="../../ActiveSupport.html">ActiveSupport</a>
+  
+    <li><a href="../../ActiveSupport/TestCase.html">ActiveSupport::TestCase</a>
+  
+    <li><a href="../../Admin.html">Admin</a>
+  
+    <li><a href="../../AdminTest.html">AdminTest</a>
+  
+    <li><a href="../../AdminsController.html">AdminsController</a>
+  
+    <li><a href="../../AdminsControllerTest.html">AdminsControllerTest</a>
+  
+    <li><a href="../../ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="../../ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="../../Article.html">Article</a>
+  
+    <li><a href="../../ArticleTest.html">ArticleTest</a>
+  
+    <li><a href="../../ArticlesController.html">ArticlesController</a>
+  
+    <li><a href="../../ArticlesControllerTest.html">ArticlesControllerTest</a>
+  
+    <li><a href="../../ArticlesHelper.html">ArticlesHelper</a>
+  
+    <li><a href="../../ArticlesHelperTest.html">ArticlesHelperTest</a>
+  
+    <li><a href="../../CreateArticles.html">CreateArticles</a>
+  
+    <li><a href="../../CreateIngredients.html">CreateIngredients</a>
+  
+    <li><a href="../../CreateQuantities.html">CreateQuantities</a>
+  
+    <li><a href="../../DeviseCreateAdmins.html">DeviseCreateAdmins</a>
+  
+    <li><a href="../../DeviseCreateUsers.html">DeviseCreateUsers</a>
+  
+    <li><a href="../../DeviseExample.html">DeviseExample</a>
+  
+    <li><a href="../../DeviseExample/Application.html">DeviseExample::Application</a>
+  
+    <li><a href="../../HomeController.html">HomeController</a>
+  
+    <li><a href="../../HomeControllerTest.html">HomeControllerTest</a>
+  
+    <li><a href="../../Ingredient.html">Ingredient</a>
+  
+    <li><a href="../../IngredientTest.html">IngredientTest</a>
+  
+    <li><a href="../../IngredientsController.html">IngredientsController</a>
+  
+    <li><a href="../../IngredientsControllerTest.html">IngredientsControllerTest</a>
+  
+    <li><a href="../../IngredientsHelper.html">IngredientsHelper</a>
+  
+    <li><a href="../../IngredientsHelperTest.html">IngredientsHelperTest</a>
+  
+    <li><a href="../../LayoutHelper.html">LayoutHelper</a>
+  
+    <li><a href="../../Logger.html">Logger</a>
+  
+    <li><a href="../../Object.html">Object</a>
+  
+    <li><a href="../../Post.html">Post</a>
+  
+    <li><a href="../../PostControllerTest.html">PostControllerTest</a>
+  
+    <li><a href="../../PostHelper.html">PostHelper</a>
+  
+    <li><a href="../../PostHelperTest.html">PostHelperTest</a>
+  
+    <li><a href="../../PostTest.html">PostTest</a>
+  
+    <li><a href="../../PostsControllerTest.html">PostsControllerTest</a>
+  
+    <li><a href="../../PostsHelper.html">PostsHelper</a>
+  
+    <li><a href="../../PostsHelperTest.html">PostsHelperTest</a>
+  
+    <li><a href="../../Product.html">Product</a>
+  
+    <li><a href="../../ProductTest.html">ProductTest</a>
+  
+    <li><a href="../../ProductsControllerTest.html">ProductsControllerTest</a>
+  
+    <li><a href="../../ProductsHelper.html">ProductsHelper</a>
+  
+    <li><a href="../../ProductsHelperTest.html">ProductsHelperTest</a>
+  
+    <li><a href="../../Quantity.html">Quantity</a>
+  
+    <li><a href="../../SitemapController.html">SitemapController</a>
+  
+    <li><a href="../../Trade.html">Trade</a>
+  
+    <li><a href="../../TradeTest.html">TradeTest</a>
+  
+    <li><a href="../../TradesControllerTest.html">TradesControllerTest</a>
+  
+    <li><a href="../../TradesHelper.html">TradesHelper</a>
+  
+    <li><a href="../../TradesHelperTest.html">TradesHelperTest</a>
+  
+    <li><a href="../../User.html">User</a>
+  
+    <li><a href="../../UserTest.html">UserTest</a>
+  
+    <li><a href="../../UsersController.html">UsersController</a>
+  
+    <li><a href="../../UsersControllerTest.html">UsersControllerTest</a>
+  
+    <li><a href="../../UsersHelper.html">UsersHelper</a>
+  
+    <li><a href="../../UsersHelperTest.html">UsersHelperTest</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<p>&lt;!–</p>
+
+<pre>Licensed to the Apache Software Foundation (ASF) under one or more
+contributor license agreements.  See the NOTICE file distributed with
+this work for additional information regarding copyright ownership.
+The ASF licenses this file to You under the Apache License, Version 2.0
+(the &quot;License&quot;); you may not use this file except in compliance with
+the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</pre>
+
+<p>–&gt;</p>
+
+<p>&lt;!–</p>
+
+<pre>For more details about configurations options that may appear in
+this file, see http://wiki.apache.org/solr/SolrConfigXml.</pre>
+
+<p>–&gt; &lt;config&gt;</p>
+
+<pre class="ruby"><span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">In</span> <span class="ruby-identifier">all</span> <span class="ruby-identifier">configuration</span> <span class="ruby-identifier">below</span>, <span class="ruby-identifier">a</span> <span class="ruby-identifier">prefix</span> <span class="ruby-identifier">of</span> <span class="ruby-string">&quot;solr.&quot;</span> <span class="ruby-keyword">for</span> <span class="ruby-keyword">class</span> <span class="ruby-identifier">names</span>
+     <span class="ruby-identifier">is</span> <span class="ruby-identifier">an</span> <span class="ruby-keyword">alias</span> <span class="ruby-identifier">that</span> <span class="ruby-identifier">causes</span> <span class="ruby-identifier">solr</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">search</span> <span class="ruby-identifier">appropriate</span> <span class="ruby-identifier">packages</span>,
+     <span class="ruby-identifier">including</span> <span class="ruby-identifier">org</span>.<span class="ruby-identifier">apache</span>.<span class="ruby-identifier">solr</span>.(<span class="ruby-identifier">search</span><span class="ruby-operator">|</span><span class="ruby-identifier">update</span><span class="ruby-operator">|</span><span class="ruby-identifier">request</span><span class="ruby-operator">|</span><span class="ruby-identifier">core</span><span class="ruby-operator">|</span><span class="ruby-identifier">analysis</span>)
+
+     <span class="ruby-constant">You</span> <span class="ruby-identifier">may</span> <span class="ruby-identifier">also</span> <span class="ruby-identifier">specify</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">fully</span> <span class="ruby-identifier">qualified</span> <span class="ruby-constant">Java</span> <span class="ruby-identifier">classname</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">you</span>
+     <span class="ruby-identifier">have</span> <span class="ruby-identifier">your</span> <span class="ruby-identifier">own</span> <span class="ruby-identifier">custom</span> <span class="ruby-identifier">plugins</span>.
+  <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Controls</span> <span class="ruby-identifier">what</span> <span class="ruby-identifier">version</span> <span class="ruby-identifier">of</span> <span class="ruby-constant">Lucene</span> <span class="ruby-identifier">various</span> <span class="ruby-identifier">components</span> <span class="ruby-identifier">of</span> <span class="ruby-constant">Solr</span>
+     <span class="ruby-identifier">adhere</span> <span class="ruby-identifier">to</span>.  <span class="ruby-constant">Generally</span>, <span class="ruby-identifier">you</span> <span class="ruby-identifier">want</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">use</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">latest</span> <span class="ruby-identifier">version</span> <span class="ruby-identifier">to</span>
+     <span class="ruby-identifier">get</span> <span class="ruby-identifier">all</span> <span class="ruby-identifier">bug</span> <span class="ruby-identifier">fixes</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">improvements</span>. <span class="ruby-constant">It</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">highly</span> <span class="ruby-identifier">recommended</span>
+     <span class="ruby-identifier">that</span> <span class="ruby-identifier">you</span> <span class="ruby-identifier">fully</span> <span class="ruby-identifier">re</span><span class="ruby-operator">-</span><span class="ruby-identifier">index</span> <span class="ruby-identifier">after</span> <span class="ruby-identifier">changing</span> <span class="ruby-identifier">this</span> <span class="ruby-identifier">setting</span> <span class="ruby-identifier">as</span> <span class="ruby-identifier">it</span> <span class="ruby-identifier">can</span>
+     <span class="ruby-identifier">affect</span> <span class="ruby-identifier">both</span> <span class="ruby-identifier">how</span> <span class="ruby-identifier">text</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">indexed</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">queried</span>.
+<span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+<span class="ruby-operator">&lt;</span><span class="ruby-identifier">luceneMatchVersion</span><span class="ruby-operator">&gt;</span><span class="ruby-constant">LUCENE_41</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/luceneMatchVersion&gt;
+
+&lt;!-- &lt;lib/</span><span class="ruby-operator">&gt;</span> <span class="ruby-identifier">directives</span> <span class="ruby-identifier">can</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">used</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">instruct</span> <span class="ruby-constant">Solr</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">load</span> <span class="ruby-identifier">an</span> <span class="ruby-constant">Jars</span>
+     <span class="ruby-identifier">identified</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">use</span> <span class="ruby-identifier">them</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">resolve</span> <span class="ruby-identifier">any</span> <span class="ruby-string">&quot;plugins&quot;</span> <span class="ruby-identifier">specified</span> <span class="ruby-keyword">in</span>
+     <span class="ruby-identifier">your</span> <span class="ruby-identifier">solrconfig</span>.<span class="ruby-identifier">xml</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">schema</span>.<span class="ruby-identifier">xml</span> (<span class="ruby-identifier">ie</span><span class="ruby-operator">:</span> <span class="ruby-constant">Analyzers</span>, <span class="ruby-constant">Request</span>
+     <span class="ruby-constant">Handlers</span>, <span class="ruby-identifier">etc</span><span class="ruby-operator">...</span>).
+
+     <span class="ruby-constant">All</span> <span class="ruby-identifier">directories</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">paths</span> <span class="ruby-identifier">are</span> <span class="ruby-identifier">resolved</span> <span class="ruby-identifier">relative</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">the</span>
+     <span class="ruby-identifier">instanceDir</span>.
+
+     <span class="ruby-constant">Please</span> <span class="ruby-identifier">note</span> <span class="ruby-identifier">that</span> <span class="ruby-operator">&lt;</span><span class="ruby-identifier">lib</span><span class="ruby-operator">/</span><span class="ruby-operator">&gt;</span> <span class="ruby-identifier">directives</span> <span class="ruby-identifier">are</span> <span class="ruby-identifier">processed</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">order</span>
+     <span class="ruby-identifier">that</span> <span class="ruby-identifier">they</span> <span class="ruby-identifier">appear</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">your</span> <span class="ruby-identifier">solrconfig</span>.<span class="ruby-identifier">xml</span> <span class="ruby-identifier">file</span>, <span class="ruby-keyword">and</span> <span class="ruby-identifier">are</span> <span class="ruby-string">&quot;stacked&quot;</span> 
+     <span class="ruby-identifier">on</span> <span class="ruby-identifier">top</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">each</span> <span class="ruby-identifier">other</span> <span class="ruby-keyword">when</span> <span class="ruby-identifier">building</span> <span class="ruby-identifier">a</span> <span class="ruby-constant">ClassLoader</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">so</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">you</span> <span class="ruby-identifier">have</span> 
+     <span class="ruby-identifier">plugin</span> <span class="ruby-identifier">jars</span> <span class="ruby-identifier">with</span> <span class="ruby-identifier">dependencies</span> <span class="ruby-identifier">on</span> <span class="ruby-identifier">other</span> <span class="ruby-identifier">jars</span>, <span class="ruby-identifier">the</span> <span class="ruby-string">&quot;lower level&quot;</span> 
+     <span class="ruby-identifier">dependency</span> <span class="ruby-identifier">jars</span> <span class="ruby-identifier">should</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">loaded</span> <span class="ruby-identifier">first</span>.
+
+     <span class="ruby-constant">If</span> <span class="ruby-identifier">a</span> <span class="ruby-string">&quot;./lib&quot;</span> <span class="ruby-identifier">directory</span> <span class="ruby-identifier">exists</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">your</span> <span class="ruby-identifier">instanceDir</span>, <span class="ruby-identifier">all</span> <span class="ruby-identifier">files</span>
+     <span class="ruby-identifier">found</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">it</span> <span class="ruby-identifier">are</span> <span class="ruby-identifier">included</span> <span class="ruby-identifier">as</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">you</span> <span class="ruby-identifier">had</span> <span class="ruby-identifier">used</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">following</span>
+     <span class="ruby-identifier">syntax</span><span class="ruby-operator">...</span>
+
+            <span class="ruby-operator">&lt;</span><span class="ruby-identifier">lib</span> <span class="ruby-identifier">dir</span>=<span class="ruby-string">&quot;./lib&quot;</span> <span class="ruby-operator">/</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+<span class="ruby-operator">&lt;</span><span class="ruby-identifier">dataDir</span><span class="ruby-operator">&gt;</span>${<span class="ruby-identifier">solr</span>.<span class="ruby-identifier">data</span>.<span class="ruby-identifier">dir</span>:}<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/dataDir&gt;
+
+&lt;!-- The DirectoryFactory to use for indexes.
+
+     solr.StandardDirectoryFactory is filesystem
+     based and tries to pick the best implementation for the current
+     JVM and platform.  solr.NRTCachingDirectoryFactory, the default,
+     wraps solr.StandardDirectoryFactory and caches small files in memory
+     for better NRT performance.
+
+     One can force a particular implementation via solr.MMapDirectoryFactory,
+     solr.NIOFSDirectoryFactory, or solr.SimpleFSDirectoryFactory.
+
+     solr.RAMDirectoryFactory is memory based, not
+     persistent, and doesn&#39;t work with replication.
+  --&gt;
+&lt;directoryFactory name=&quot;DirectoryFactory&quot; 
+                  class=&quot;${solr.directoryFactory:solr.NRTCachingDirectoryFactory}&quot;/</span><span class="ruby-operator">&gt;</span> 
+
+<span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span>
+     <span class="ruby-constant">Index</span> <span class="ruby-constant">Config</span> <span class="ruby-operator">-</span> <span class="ruby-constant">These</span> <span class="ruby-identifier">settings</span> <span class="ruby-identifier">control</span> <span class="ruby-identifier">low</span><span class="ruby-operator">-</span><span class="ruby-identifier">level</span> <span class="ruby-identifier">behavior</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">indexing</span>
+     <span class="ruby-constant">Most</span> <span class="ruby-identifier">example</span> <span class="ruby-identifier">settings</span> <span class="ruby-identifier">here</span> <span class="ruby-identifier">show</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">default</span> <span class="ruby-identifier">value</span>, <span class="ruby-identifier">but</span> <span class="ruby-identifier">are</span> <span class="ruby-identifier">commented</span>
+     <span class="ruby-identifier">out</span>, <span class="ruby-identifier">to</span> <span class="ruby-identifier">more</span> <span class="ruby-identifier">easily</span> <span class="ruby-identifier">see</span> <span class="ruby-identifier">where</span> <span class="ruby-identifier">customizations</span> <span class="ruby-identifier">have</span> <span class="ruby-identifier">been</span> <span class="ruby-identifier">made</span>.
+
+     <span class="ruby-constant">Note</span><span class="ruby-operator">:</span> <span class="ruby-constant">This</span> <span class="ruby-identifier">replaces</span> <span class="ruby-operator">&lt;</span><span class="ruby-identifier">indexDefaults</span><span class="ruby-operator">&gt;</span> <span class="ruby-keyword">and</span> <span class="ruby-operator">&lt;</span><span class="ruby-identifier">mainIndex</span><span class="ruby-operator">&gt;</span> <span class="ruby-identifier">from</span> <span class="ruby-identifier">older</span> <span class="ruby-identifier">versions</span>
+     <span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span><span class="ruby-operator">~</span> <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+<span class="ruby-operator">&lt;</span><span class="ruby-identifier">indexConfig</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-identifier">maxFieldLength</span> <span class="ruby-identifier">was</span> <span class="ruby-identifier">removed</span> <span class="ruby-keyword">in</span> <span class="ruby-value">4.0</span>. <span class="ruby-constant">To</span> <span class="ruby-identifier">get</span> <span class="ruby-identifier">similar</span> <span class="ruby-identifier">behavior</span>, <span class="ruby-identifier">include</span> <span class="ruby-identifier">a</span> 
+       <span class="ruby-constant">LimitTokenCountFilterFactory</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">your</span> <span class="ruby-identifier">fieldType</span> <span class="ruby-identifier">definition</span>. <span class="ruby-constant">E</span>.<span class="ruby-identifier">g</span>. 
+   <span class="ruby-operator">&lt;</span><span class="ruby-identifier">filter</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;solr.LimitTokenCountFilterFactory&quot;</span> <span class="ruby-identifier">maxTokenCount</span>=<span class="ruby-string">&quot;10000&quot;</span><span class="ruby-operator">/</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Maximum</span> <span class="ruby-identifier">time</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">wait</span> <span class="ruby-keyword">for</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">write</span> <span class="ruby-identifier">lock</span> (<span class="ruby-identifier">ms</span>) <span class="ruby-keyword">for</span> <span class="ruby-identifier">an</span> <span class="ruby-constant">IndexWriter</span>. <span class="ruby-constant">Default</span><span class="ruby-operator">:</span> <span class="ruby-value">1000</span> <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-operator">&lt;</span><span class="ruby-identifier">writeLockTimeout</span><span class="ruby-operator">&gt;</span><span class="ruby-value">1000</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/writeLockTimeout&gt;  --&gt;
+
+  &lt;!-- The maximum number of simultaneous threads that may be
+       indexing documents at once in IndexWriter; if more than this
+       many threads arrive they will wait for others to finish.
+       Default in Solr/</span><span class="ruby-constant">Lucene</span> <span class="ruby-identifier">is</span> <span class="ruby-value">8</span>. <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-identifier">maxIndexingThreads</span><span class="ruby-operator">&gt;</span><span class="ruby-value">2</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/maxIndexingThreads&gt; 
+
+  &lt;useCompoundFile&gt;true&lt;/</span><span class="ruby-identifier">seCompoundFile</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-identifier">ramBufferSizeMB</span> <span class="ruby-identifier">sets</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">amount</span> <span class="ruby-identifier">of</span> <span class="ruby-constant">RAM</span> <span class="ruby-identifier">that</span> <span class="ruby-identifier">may</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">used</span> <span class="ruby-identifier">by</span> <span class="ruby-constant">Lucene</span>
+       <span class="ruby-identifier">indexing</span> <span class="ruby-keyword">for</span> <span class="ruby-identifier">buffering</span> <span class="ruby-identifier">added</span> <span class="ruby-identifier">documents</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">deletions</span> <span class="ruby-identifier">before</span> <span class="ruby-identifier">they</span> <span class="ruby-identifier">are</span>
+       <span class="ruby-identifier">flushed</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">the</span> <span class="ruby-constant">Directory</span>.
+       <span class="ruby-identifier">maxBufferedDocs</span> <span class="ruby-identifier">sets</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">limit</span> <span class="ruby-identifier">on</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">number</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">documents</span> <span class="ruby-identifier">buffered</span>
+       <span class="ruby-identifier">before</span> <span class="ruby-identifier">flushing</span>.
+       <span class="ruby-constant">If</span> <span class="ruby-identifier">both</span> <span class="ruby-identifier">ramBufferSizeMB</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">maxBufferedDocs</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">set</span>, <span class="ruby-keyword">then</span>
+       <span class="ruby-constant">Lucene</span> <span class="ruby-identifier">will</span> <span class="ruby-identifier">flush</span> <span class="ruby-identifier">based</span> <span class="ruby-identifier">on</span> <span class="ruby-identifier">whichever</span> <span class="ruby-identifier">limit</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">hit</span> <span class="ruby-identifier">first</span>.  <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-identifier">ramBufferSizeMB</span><span class="ruby-operator">&gt;</span><span class="ruby-value">20</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/ramBufferSizeMB&gt; --&gt;
+  &lt;maxBufferedDocs&gt;10000&lt;/</span><span class="ruby-identifier">axBufferedDocs</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Expert</span><span class="ruby-operator">:</span> <span class="ruby-constant">Merge</span> <span class="ruby-constant">Policy</span> 
+       <span class="ruby-constant">The</span> <span class="ruby-constant">Merge</span> <span class="ruby-constant">Policy</span> <span class="ruby-keyword">in</span> <span class="ruby-constant">Lucene</span> <span class="ruby-identifier">controls</span> <span class="ruby-identifier">how</span> <span class="ruby-identifier">merging</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">segments</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">done</span>.
+       <span class="ruby-constant">The</span> <span class="ruby-identifier">default</span> <span class="ruby-identifier">since</span> <span class="ruby-constant">Solr</span><span class="ruby-operator">/</span><span class="ruby-constant">Lucene</span> <span class="ruby-value">3.3</span> <span class="ruby-identifier">is</span> <span class="ruby-constant">TieredMergePolicy</span>.
+       <span class="ruby-constant">The</span> <span class="ruby-identifier">default</span> <span class="ruby-identifier">since</span> <span class="ruby-constant">Lucene</span> <span class="ruby-value">2.3</span> <span class="ruby-identifier">was</span> <span class="ruby-identifier">the</span> <span class="ruby-constant">LogByteSizeMergePolicy</span>,
+       <span class="ruby-constant">Even</span> <span class="ruby-identifier">older</span> <span class="ruby-identifier">versions</span> <span class="ruby-identifier">of</span> <span class="ruby-constant">Lucene</span> <span class="ruby-identifier">used</span> <span class="ruby-constant">LogDocMergePolicy</span>.
+    <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-identifier">mergePolicy</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;org.apache.lucene.index.TieredMergePolicy&quot;</span><span class="ruby-operator">&gt;</span>
+    <span class="ruby-operator">&lt;</span><span class="ruby-identifier">int</span> <span class="ruby-identifier">name</span>=<span class="ruby-string">&quot;maxMergeAtOnce&quot;</span><span class="ruby-operator">&gt;</span><span class="ruby-value">4</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/int&gt;
+    &lt;int name=&quot;segmentsPerTier&quot;&gt;4&lt;/</span><span class="ruby-identifier">nt</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/mergePolicy&gt;
+
+  &lt;unlockOnStartup&gt;true&lt;/</span><span class="ruby-identifier">nlockOnStartup</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/indexConfig&gt;
+
+&lt;updateHandler class=&quot;solr.DirectUpdateHandler2&quot;&gt;
+
+  &lt;!-- Enables a transaction log, used for real-time get, durability, and
+       and solr cloud replica recovery.  The log can grow as big as
+       uncommitted changes to the index, so use of a hard autoCommit
+       is recommended (see below).
+       &quot;dir&quot; - the target directory for transaction logs, defaults to the
+              solr data directory.  --&gt; 
+  &lt;updateLog&gt;
+    &lt;str name=&quot;dir&quot;&gt;${solr.ulog.dir:}&lt;/</span><span class="ruby-identifier">tr</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-regexp">/updateLog&gt;
+
+   &lt;autoCommit&gt; 
+     &lt;maxTime&gt;15000&lt;/</span><span class="ruby-identifier">axTime</span><span class="ruby-operator">&gt;</span> 
+     <span class="ruby-operator">&lt;</span><span class="ruby-identifier">openSearcher</span><span class="ruby-operator">&gt;</span><span class="ruby-keyword">false</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/openSearcher&gt; 
+   &lt;/</span><span class="ruby-identifier">autoCommit</span><span class="ruby-operator">&gt;</span>
+
+   <span class="ruby-operator">&lt;</span><span class="ruby-identifier">autoSoftCommit</span><span class="ruby-operator">&gt;</span> 
+     <span class="ruby-operator">&lt;</span><span class="ruby-identifier">maxTime</span><span class="ruby-operator">&gt;</span><span class="ruby-value">5000</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/maxTime&gt; 
+   &lt;/</span><span class="ruby-identifier">autoSoftCommit</span><span class="ruby-operator">&gt;</span>
+<span class="ruby-operator">&lt;</span><span class="ruby-regexp">/updateHandler&gt;
+
+&lt;query&gt;
+  &lt;maxBooleanClauses&gt;1024&lt;/</span><span class="ruby-identifier">axBooleanClauses</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Solr</span> <span class="ruby-constant">Internal</span> <span class="ruby-constant">Query</span> <span class="ruby-constant">Caches</span>
+
+       <span class="ruby-constant">There</span> <span class="ruby-identifier">are</span> <span class="ruby-identifier">two</span> <span class="ruby-identifier">implementations</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">cache</span> <span class="ruby-identifier">available</span> <span class="ruby-keyword">for</span> <span class="ruby-constant">Solr</span>,
+       <span class="ruby-constant">LRUCache</span>, <span class="ruby-identifier">based</span> <span class="ruby-identifier">on</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">synchronized</span> <span class="ruby-constant">LinkedHashMap</span>, <span class="ruby-keyword">and</span>
+       <span class="ruby-constant">FastLRUCache</span>, <span class="ruby-identifier">based</span> <span class="ruby-identifier">on</span> <span class="ruby-identifier">a</span> <span class="ruby-constant">ConcurrentHashMap</span>.  
+
+       <span class="ruby-constant">FastLRUCache</span> <span class="ruby-identifier">has</span> <span class="ruby-identifier">faster</span> <span class="ruby-identifier">gets</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">slower</span> <span class="ruby-identifier">puts</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">single</span>
+       <span class="ruby-identifier">threaded</span> <span class="ruby-identifier">operation</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">thus</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">generally</span> <span class="ruby-identifier">faster</span> <span class="ruby-identifier">than</span> <span class="ruby-constant">LRUCache</span>
+       <span class="ruby-keyword">when</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">hit</span> <span class="ruby-identifier">ratio</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">cache</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">high</span> (<span class="ruby-operator">&gt;</span> <span class="ruby-value">75</span><span class="ruby-operator">%</span>), <span class="ruby-keyword">and</span> <span class="ruby-identifier">may</span> <span class="ruby-identifier">be</span>
+       <span class="ruby-identifier">faster</span> <span class="ruby-identifier">under</span> <span class="ruby-identifier">other</span> <span class="ruby-identifier">scenarios</span> <span class="ruby-identifier">on</span> <span class="ruby-identifier">multi</span><span class="ruby-operator">-</span><span class="ruby-identifier">cpu</span> <span class="ruby-identifier">systems</span>.
+  <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Filter</span> <span class="ruby-constant">Cache</span>
+
+       <span class="ruby-constant">Cache</span> <span class="ruby-identifier">used</span> <span class="ruby-identifier">by</span> <span class="ruby-constant">SolrIndexSearcher</span> <span class="ruby-keyword">for</span> <span class="ruby-identifier">filters</span> (<span class="ruby-constant">DocSets</span>),
+       <span class="ruby-identifier">unordered</span> <span class="ruby-identifier">sets</span> <span class="ruby-identifier">of</span> <span class="ruby-operator">*</span><span class="ruby-identifier">all</span><span class="ruby-operator">*</span> <span class="ruby-identifier">documents</span> <span class="ruby-identifier">that</span> <span class="ruby-identifier">match</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">query</span>.  <span class="ruby-constant">When</span> <span class="ruby-identifier">a</span>
+       <span class="ruby-identifier">new</span> <span class="ruby-identifier">searcher</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">opened</span>, <span class="ruby-identifier">its</span> <span class="ruby-identifier">caches</span> <span class="ruby-identifier">may</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">prepopulated</span> <span class="ruby-keyword">or</span>
+       <span class="ruby-string">&quot;autowarmed&quot;</span> <span class="ruby-identifier">using</span> <span class="ruby-identifier">data</span> <span class="ruby-identifier">from</span> <span class="ruby-identifier">caches</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">old</span> <span class="ruby-identifier">searcher</span>.
+       <span class="ruby-identifier">autowarmCount</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">number</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">items</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">prepopulate</span>.  <span class="ruby-constant">For</span>
+       <span class="ruby-constant">LRUCache</span>, <span class="ruby-identifier">the</span> <span class="ruby-identifier">autowarmed</span> <span class="ruby-identifier">items</span> <span class="ruby-identifier">will</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">most</span> <span class="ruby-identifier">recently</span>
+       <span class="ruby-identifier">accessed</span> <span class="ruby-identifier">items</span>.
+
+       <span class="ruby-constant">Parameters</span><span class="ruby-operator">:</span>
+         <span class="ruby-identifier">class</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">the</span> <span class="ruby-constant">SolrCache</span> <span class="ruby-identifier">implementation</span> <span class="ruby-constant">LRUCache</span> <span class="ruby-keyword">or</span>
+             (<span class="ruby-constant">LRUCache</span> <span class="ruby-keyword">or</span> <span class="ruby-constant">FastLRUCache</span>)
+         <span class="ruby-identifier">size</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">maximum</span> <span class="ruby-identifier">number</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">entries</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">cache</span>
+         <span class="ruby-identifier">initialSize</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">initial</span> <span class="ruby-identifier">capacity</span> (<span class="ruby-identifier">number</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">entries</span>) <span class="ruby-identifier">of</span>
+             <span class="ruby-identifier">the</span> <span class="ruby-identifier">cache</span>.  (<span class="ruby-identifier">see</span> <span class="ruby-identifier">java</span>.<span class="ruby-identifier">util</span>.<span class="ruby-constant">HashMap</span>)
+         <span class="ruby-identifier">autowarmCount</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">number</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">entries</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">prepopulate</span> <span class="ruby-identifier">from</span>
+             <span class="ruby-keyword">and</span> <span class="ruby-identifier">old</span> <span class="ruby-identifier">cache</span>.  
+    <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-identifier">filterCache</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;solr.FastLRUCache&quot;</span>
+               <span class="ruby-identifier">size</span>=<span class="ruby-string">&quot;512&quot;</span>
+               <span class="ruby-identifier">initialSize</span>=<span class="ruby-string">&quot;512&quot;</span>
+               <span class="ruby-identifier">autowarmCount</span>=<span class="ruby-string">&quot;0&quot;</span><span class="ruby-operator">/</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Query</span> <span class="ruby-constant">Result</span> <span class="ruby-constant">Cache</span>
+
+       <span class="ruby-constant">Caches</span> <span class="ruby-identifier">results</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">searches</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">ordered</span> <span class="ruby-identifier">lists</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">document</span> <span class="ruby-identifier">ids</span>
+       (<span class="ruby-constant">DocList</span>) <span class="ruby-identifier">based</span> <span class="ruby-identifier">on</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">query</span>, <span class="ruby-identifier">a</span> <span class="ruby-identifier">sort</span>, <span class="ruby-keyword">and</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">range</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">documents</span> <span class="ruby-identifier">requested</span>.  
+    <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-identifier">queryResultCache</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;solr.LRUCache&quot;</span>
+                   <span class="ruby-identifier">size</span>=<span class="ruby-string">&quot;512&quot;</span>
+                   <span class="ruby-identifier">initialSize</span>=<span class="ruby-string">&quot;512&quot;</span>
+                   <span class="ruby-identifier">autowarmCount</span>=<span class="ruby-string">&quot;0&quot;</span><span class="ruby-operator">/</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Document</span> <span class="ruby-constant">Cache</span>
+
+       <span class="ruby-constant">Caches</span> <span class="ruby-constant">Lucene</span> <span class="ruby-constant">Document</span> <span class="ruby-identifier">objects</span> (<span class="ruby-identifier">the</span> <span class="ruby-identifier">stored</span> <span class="ruby-identifier">fields</span> <span class="ruby-keyword">for</span> <span class="ruby-identifier">each</span>
+       <span class="ruby-identifier">document</span>).  <span class="ruby-constant">Since</span> <span class="ruby-constant">Lucene</span> <span class="ruby-identifier">internal</span> <span class="ruby-identifier">document</span> <span class="ruby-identifier">ids</span> <span class="ruby-identifier">are</span> <span class="ruby-identifier">transient</span>,
+       <span class="ruby-identifier">this</span> <span class="ruby-identifier">cache</span> <span class="ruby-identifier">will</span> <span class="ruby-keyword">not</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">autowarmed</span>.  
+    <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-identifier">documentCache</span> <span class="ruby-identifier">class</span>=<span class="ruby-string">&quot;solr.LRUCache&quot;</span>
+                 <span class="ruby-identifier">size</span>=<span class="ruby-string">&quot;512&quot;</span>
+                 <span class="ruby-identifier">initialSize</span>=<span class="ruby-string">&quot;512&quot;</span>
+                 <span class="ruby-identifier">autowarmCount</span>=<span class="ruby-string">&quot;0&quot;</span><span class="ruby-operator">/</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Lazy</span> <span class="ruby-constant">Field</span> <span class="ruby-constant">Loading</span>
+
+       <span class="ruby-constant">If</span> <span class="ruby-keyword">true</span>, <span class="ruby-identifier">stored</span> <span class="ruby-identifier">fields</span> <span class="ruby-identifier">that</span> <span class="ruby-identifier">are</span> <span class="ruby-keyword">not</span> <span class="ruby-identifier">requested</span> <span class="ruby-identifier">will</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">loaded</span>
+       <span class="ruby-identifier">lazily</span>.  <span class="ruby-constant">This</span> <span class="ruby-identifier">can</span> <span class="ruby-identifier">result</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">significant</span> <span class="ruby-identifier">speed</span> <span class="ruby-identifier">improvement</span>
+       <span class="ruby-keyword">if</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">usual</span> <span class="ruby-keyword">case</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">to</span> <span class="ruby-keyword">not</span> <span class="ruby-identifier">load</span> <span class="ruby-identifier">all</span> <span class="ruby-identifier">stored</span> <span class="ruby-identifier">fields</span>,
+       <span class="ruby-identifier">especially</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">skipped</span> <span class="ruby-identifier">fields</span> <span class="ruby-identifier">are</span> <span class="ruby-identifier">large</span> <span class="ruby-identifier">compressed</span> <span class="ruby-identifier">text</span>
+       <span class="ruby-identifier">fields</span>.
+  <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-identifier">enableLazyFieldLoading</span><span class="ruby-operator">&gt;</span><span class="ruby-keyword">true</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/enableLazyFieldLoading&gt;
+
+ &lt;!-- Use Filter For Sorted Query
+
+      A possible optimization that attempts to use a filter to
+      satisfy a search.  If the requested sort does not include
+      score, then the filterCache will be checked for a filter
+      matching the query. If found, the filter will be used as the
+      source of document ids, and then the sort will be applied to
+      that.
+
+      For most situations, this will not be useful unless you
+      frequently get the same search repeatedly with different sort
+      options, and none of them ever use &quot;score&quot;
+   --&gt;
+ &lt;!--
+    &lt;useFilterForSortedQuery&gt;true&lt;/</span><span class="ruby-identifier">seFilterForSortedQuery</span><span class="ruby-operator">&gt;</span>
+   <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+
+ <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Result</span> <span class="ruby-constant">Window</span> <span class="ruby-constant">Size</span>
+
+      <span class="ruby-constant">An</span> <span class="ruby-identifier">optimization</span> <span class="ruby-keyword">for</span> <span class="ruby-identifier">use</span> <span class="ruby-identifier">with</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">queryResultCache</span>.  <span class="ruby-constant">When</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">search</span>
+      <span class="ruby-identifier">is</span> <span class="ruby-identifier">requested</span>, <span class="ruby-identifier">a</span> <span class="ruby-identifier">superset</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">requested</span> <span class="ruby-identifier">number</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">document</span> <span class="ruby-identifier">ids</span>
+      <span class="ruby-identifier">are</span> <span class="ruby-identifier">collected</span>.  <span class="ruby-constant">For</span> <span class="ruby-identifier">example</span>, <span class="ruby-keyword">if</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">search</span> <span class="ruby-keyword">for</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">particular</span> <span class="ruby-identifier">query</span>
+      <span class="ruby-identifier">requests</span> <span class="ruby-identifier">matching</span> <span class="ruby-identifier">documents</span> <span class="ruby-value">10</span> <span class="ruby-identifier">through</span> <span class="ruby-value">19</span>, <span class="ruby-keyword">and</span> <span class="ruby-identifier">queryWindowSize</span> <span class="ruby-identifier">is</span> <span class="ruby-value">50</span>,
+      <span class="ruby-keyword">then</span> <span class="ruby-identifier">documents</span> <span class="ruby-value">0</span> <span class="ruby-identifier">through</span> <span class="ruby-value">49</span> <span class="ruby-identifier">will</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">collected</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">cached</span>.  <span class="ruby-constant">Any</span> <span class="ruby-identifier">further</span>
+      <span class="ruby-identifier">requests</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">that</span> <span class="ruby-identifier">range</span> <span class="ruby-identifier">can</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">satisfied</span> <span class="ruby-identifier">via</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">cache</span>.  
+   <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+ <span class="ruby-operator">&lt;</span><span class="ruby-identifier">queryResultWindowSize</span><span class="ruby-operator">&gt;</span><span class="ruby-value">20</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/queryResultWindowSize&gt;
+
+ &lt;!-- Maximum number of documents to cache for any entry in the
+      queryResultCache. 
+   --&gt;
+ &lt;queryResultMaxDocsCached&gt;200&lt;/</span><span class="ruby-identifier">queryResultMaxDocsCached</span><span class="ruby-operator">&gt;</span>
+
+ <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Query</span> <span class="ruby-constant">Related</span> <span class="ruby-constant">Event</span> <span class="ruby-constant">Listeners</span>
+
+      <span class="ruby-constant">Various</span> <span class="ruby-constant">IndexSearcher</span> <span class="ruby-identifier">related</span> <span class="ruby-identifier">events</span> <span class="ruby-identifier">can</span> <span class="ruby-identifier">trigger</span> <span class="ruby-constant">Listeners</span> <span class="ruby-identifier">to</span>
+      <span class="ruby-identifier">take</span> <span class="ruby-identifier">actions</span>.
+
+      <span class="ruby-identifier">newSearcher</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">fired</span> <span class="ruby-identifier">whenever</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">new</span> <span class="ruby-identifier">searcher</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">being</span> <span class="ruby-identifier">prepared</span>
+      <span class="ruby-keyword">and</span> <span class="ruby-identifier">there</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">current</span> <span class="ruby-identifier">searcher</span> <span class="ruby-identifier">handling</span> <span class="ruby-identifier">requests</span> (<span class="ruby-identifier">aka</span>
+      <span class="ruby-identifier">registered</span>).  <span class="ruby-constant">It</span> <span class="ruby-identifier">can</span> <span class="ruby-identifier">be</span> <span class="ruby-identifier">used</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">prime</span> <span class="ruby-identifier">certain</span> <span class="ruby-identifier">caches</span> <span class="ruby-identifier">to</span>
+      <span class="ruby-identifier">prevent</span> <span class="ruby-identifier">long</span> <span class="ruby-identifier">request</span> <span class="ruby-identifier">times</span> <span class="ruby-keyword">for</span> <span class="ruby-identifier">certain</span> <span class="ruby-identifier">requests</span>.
+
+      <span class="ruby-identifier">firstSearcher</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">fired</span> <span class="ruby-identifier">whenever</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">new</span> <span class="ruby-identifier">searcher</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">being</span>
+      <span class="ruby-identifier">prepared</span> <span class="ruby-identifier">but</span> <span class="ruby-identifier">there</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">no</span> <span class="ruby-identifier">current</span> <span class="ruby-identifier">registered</span> <span class="ruby-identifier">searcher</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">handle</span>
+      <span class="ruby-identifier">requests</span> <span class="ruby-keyword">or</span> <span class="ruby-identifier">to</span> <span class="ruby-identifier">gain</span> <span class="ruby-identifier">autowarming</span> <span class="ruby-identifier">data</span> <span class="ruby-identifier">from</span>.
+
+   <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+
+  <span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Use</span> <span class="ruby-constant">Cold</span> <span class="ruby-constant">Searcher</span>
+
+       <span class="ruby-constant">If</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">search</span> <span class="ruby-identifier">request</span> <span class="ruby-identifier">comes</span> <span class="ruby-keyword">in</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">there</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">no</span> <span class="ruby-identifier">current</span>
+       <span class="ruby-identifier">registered</span> <span class="ruby-identifier">searcher</span>, <span class="ruby-keyword">then</span> <span class="ruby-identifier">immediately</span> <span class="ruby-identifier">register</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">still</span>
+       <span class="ruby-identifier">warming</span> <span class="ruby-identifier">searcher</span> <span class="ruby-keyword">and</span> <span class="ruby-identifier">use</span> <span class="ruby-identifier">it</span>.  <span class="ruby-constant">If</span> <span class="ruby-string">&quot;false&quot;</span> <span class="ruby-keyword">then</span> <span class="ruby-identifier">all</span> <span class="ruby-identifier">requests</span>
+       <span class="ruby-identifier">will</span> <span class="ruby-identifier">block</span> <span class="ruby-keyword">until</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">first</span> <span class="ruby-identifier">searcher</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">done</span> <span class="ruby-identifier">warming</span>.
+    <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-identifier">useColdSearcher</span><span class="ruby-operator">&gt;</span><span class="ruby-keyword">false</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/useColdSearcher&gt;
+
+  &lt;!-- Max Warming Searchers
+
+       Maximum number of searchers that may be warming in the
+       background concurrently.  An error is returned if this limit
+       is exceeded.
+
+       Recommend values of 1-2 for read-only slaves, higher for
+       masters w/</span> <span class="ruby-identifier">cache</span> <span class="ruby-identifier">warming</span>.
+    <span class="ruby-operator">-</span><span class="ruby-operator">-</span><span class="ruby-operator">&gt;</span>
+  <span class="ruby-operator">&lt;</span><span class="ruby-identifier">maxWarmingSearchers</span><span class="ruby-operator">&gt;</span><span class="ruby-value">5</span><span class="ruby-operator">&lt;</span><span class="ruby-regexp">/maxWarmingSearchers&gt;
+
+&lt;/</span><span class="ruby-identifier">query</span><span class="ruby-operator">&gt;</span>
+
+<span class="ruby-operator">&lt;</span><span class="ruby-operator">!</span><span class="ruby-operator">-</span><span class="ruby-operator">-</span> <span class="ruby-constant">Request</span> <span class="ruby-constant">Dispatcher</span>
+
+     <span class="ruby-constant">This</span> <span class="ruby-identifier">section</span> <span class="ruby-identifier">contains</span> <span class="ruby-identifier">instructions</span> <span class="ruby-keyword">for</span> <span class="ruby-identifier">how</span> <span class="ruby-identifier">the</span> <span class="ruby-constant">SolrDispatchFilter</span>
+     <span class="ruby-identifier">should</span> <span class="ruby-identifier">behave</span> <span class="ruby-keyword">when</span> <span class="ruby-identifier">processing</span> <span class="ruby-identifier">requests</span> <span class="ruby-keyword">for</span> <span class="ruby-identifier">this</span> <span class="ruby-constant">SolrCore</span>.
+
+     <span class="ruby-identifier">handleSelect</span> <span class="ruby-identifier">is</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">legacy</span> <span class="ruby-identifier">option</span> <span class="ruby-identifier">that</span> <span class="ruby-identifier">affects</span> <span class="ruby-identifier">the</span> <span class="ruby-identifier">behavior</span> <span class="ruby-identifier">of</span> <span class="ruby-identifier">requests</span>
+     <span class="ruby-identifier">such</span> <span class="ruby-identifier">as</span> <span class="ruby-regexp">/select?qt=XXX
+
+     handleSelect=&quot;true&quot; will cause the SolrDispatchFilter to process
+     the request and dispatch the query to a handler specified by the 
+     &quot;qt&quot; param, assuming &quot;/</span><span class="ruby-identifier">elect</span><span class="ruby-string">&quot; isn&#39;t already registered.
+
+     handleSelect=&quot;</span><span class="ruby-keyword">false</span><span class="ruby-string">&quot; will cause the SolrDispatchFilter to
+     ignore &quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">select</span><span class="ruby-string">&quot; requests, resulting in a 404 unless a handler
+     is explicitly registered with the name &quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">select</span><span class="ruby-string">&quot;
+
+     handleSelect=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot; is not recommended for new users, but is the default
+     for backwards compatibility
+  --&gt;
+&lt;requestDispatcher handleSelect=&quot;</span><span class="ruby-keyword">false</span><span class="ruby-string">&quot; &gt;
+  &lt;!-- Request Parsing
+
+       These settings indicate how Solr Requests may be parsed, and
+       what restrictions may be placed on the ContentStreams from
+       those requests
+
+       enableRemoteStreaming - enables use of the stream.file
+       and stream.url parameters for specifying remote streams.
+
+       multipartUploadLimitInKB - specifies the max size (in KiB) of
+       Multipart File Uploads that Solr will allow in a Request.
+
+       formdataUploadLimitInKB - specifies the max size (in KiB) of
+       form data (application/x-www-form-urlencoded) sent via
+       POST. You can use POST to pass request parameters not
+       fitting into the URL.
+
+       *** WARNING ***
+       The settings below authorize Solr to fetch remote files, You
+       should make sure your system has some authentication before
+       using enableRemoteStreaming=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot;
+
+    --&gt; 
+
+  &lt;!-- HTTP Caching
+
+       Set HTTP caching related parameters (for proxy caches and clients).
+
+       The options below instruct Solr not to output any HTTP Caching
+       related headers
+    --&gt;
+  &lt;httpCaching never304=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot; /&gt;
+  &lt;!-- If you include a &lt;cacheControl&gt; directive, it will be used to
+       generate a Cache-Control header (as well as an Expires header
+       if the value contains &quot;</span><span class="ruby-identifier">max</span><span class="ruby-operator">-</span><span class="ruby-identifier">age</span>=<span class="ruby-string">&quot;)
+
+       By default, no Cache-Control header is generated.
+
+       You can use the &lt;cacheControl&gt; option even if you have set
+       never304=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot;
+    --&gt;
+  &lt;!--
+     &lt;httpCaching never304=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot; &gt;
+       &lt;cacheControl&gt;max-age=30, public&lt;/cacheControl&gt; 
+     &lt;/httpCaching&gt;
+    --&gt;
+  &lt;!-- To enable Solr to respond with automatically generated HTTP
+       Caching headers, and to response to Cache Validation requests
+       correctly, set the value of never304=&quot;</span><span class="ruby-keyword">false</span><span class="ruby-string">&quot;
+
+       This will cause Solr to generate Last-Modified and ETag
+       headers based on the properties of the Index.
+
+       The following options can also be specified to affect the
+       values of these headers...
+
+       lastModFrom - the default value is &quot;</span><span class="ruby-identifier">openTime</span><span class="ruby-string">&quot; which means the
+       Last-Modified value (and validation against If-Modified-Since
+       requests) will all be relative to when the current Searcher
+       was opened.  You can change it to lastModFrom=&quot;</span><span class="ruby-identifier">dirLastMod</span><span class="ruby-string">&quot; if
+       you want the value to exactly correspond to when the physical
+       index was last modified.
+
+       etagSeed=&quot;</span><span class="ruby-operator">...</span><span class="ruby-string">&quot; is an option you can change to force the ETag
+       header (and validation against If-None-Match requests) to be
+       different even if the index has not changed (ie: when making
+       significant changes to your config file)
+
+       (lastModifiedFrom and etagSeed are both ignored if you use
+       the never304=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot; option)
+    --&gt;
+  &lt;!--
+     &lt;httpCaching lastModifiedFrom=&quot;</span><span class="ruby-identifier">openTime</span><span class="ruby-string">&quot;
+                  etagSeed=&quot;</span><span class="ruby-constant">Solr</span><span class="ruby-string">&quot;&gt;
+       &lt;cacheControl&gt;max-age=30, public&lt;/cacheControl&gt; 
+     &lt;/httpCaching&gt;
+    --&gt;
+&lt;/requestDispatcher&gt;
+
+&lt;!-- Request Handlers 
+
+     http://wiki.apache.org/solr/SolrRequestHandler
+
+     Incoming queries will be dispatched to a specific handler by name
+     based on the path specified in the request.
+
+     Legacy behavior: If the request path uses &quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">select</span><span class="ruby-string">&quot; but no Request
+     Handler has that name, and if handleSelect=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot; has been specified in
+     the requestDispatcher, then the Request Handler is dispatched based on
+     the qt parameter.  Handlers without a leading &#39;/&#39; are accessed this way
+     like so: http://host/app/[core/]select?qt=name  If no qt is
+     given, then the requestHandler that declares default=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot; will be
+     used or the one named &quot;</span><span class="ruby-identifier">standard</span><span class="ruby-string">&quot;.
+
+     If a Request Handler is declared with startup=&quot;</span><span class="ruby-identifier">lazy</span><span class="ruby-string">&quot;, then it will
+     not be initialized until the first request that uses it.
+
+  --&gt;
+&lt;!-- SearchHandler
+
+     http://wiki.apache.org/solr/SearchHandler
+
+     For processing Search Queries, the primary Request Handler
+     provided with Solr is &quot;</span><span class="ruby-constant">SearchHandler</span><span class="ruby-string">&quot; It delegates to a sequent
+     of SearchComponents (see below) and supports distributed
+     queries across multiple shards
+  --&gt;
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">select</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">SearchHandler</span><span class="ruby-string">&quot;&gt;
+  &lt;arr name=&quot;</span><span class="ruby-identifier">last</span><span class="ruby-operator">-</span><span class="ruby-identifier">components</span><span class="ruby-string">&quot;&gt;
+    &lt;str&gt;spellcheck&lt;/str&gt;
+  &lt;/arr&gt;
+&lt;/requestHandler&gt;
+
+&lt;!-- A request handler that returns indented JSON by default --&gt;
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">query</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">SearchHandler</span><span class="ruby-string">&quot;&gt;
+   &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+     &lt;str name=&quot;</span><span class="ruby-identifier">echoParams</span><span class="ruby-string">&quot;&gt;explicit&lt;/str&gt;
+     &lt;str name=&quot;</span><span class="ruby-identifier">wt</span><span class="ruby-string">&quot;&gt;json&lt;/str&gt;
+     &lt;str name=&quot;</span><span class="ruby-identifier">indent</span><span class="ruby-string">&quot;&gt;true&lt;/str&gt;
+     &lt;str name=&quot;</span><span class="ruby-identifier">df</span><span class="ruby-string">&quot;&gt;text&lt;/str&gt;
+   &lt;/lst&gt;
+   &lt;arr name=&quot;</span><span class="ruby-identifier">last</span><span class="ruby-operator">-</span><span class="ruby-identifier">components</span><span class="ruby-string">&quot;&gt;
+     &lt;str&gt;spellcheck&lt;/str&gt;
+   &lt;/arr&gt;     
+&lt;/requestHandler&gt;
+
+&lt;!-- realtime get handler, guaranteed to return the latest stored fields of
+     any document, without the need to commit or open a new searcher.  The
+     current implementation relies on the updateLog feature being enabled. --&gt;
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">get</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">RealTimeGetHandler</span><span class="ruby-string">&quot;&gt;
+   &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+     &lt;str name=&quot;</span><span class="ruby-identifier">omitHeader</span><span class="ruby-string">&quot;&gt;true&lt;/str&gt;
+     &lt;str name=&quot;</span><span class="ruby-identifier">wt</span><span class="ruby-string">&quot;&gt;json&lt;/str&gt;
+     &lt;str name=&quot;</span><span class="ruby-identifier">indent</span><span class="ruby-string">&quot;&gt;true&lt;/str&gt;
+   &lt;/lst&gt;
+&lt;/requestHandler&gt;
+
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">update</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">UpdateRequestHandler</span><span class="ruby-string">&quot;&gt;
+&lt;/requestHandler&gt;
+
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">update</span><span class="ruby-operator">/</span><span class="ruby-identifier">json</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">JsonUpdateRequestHandler</span><span class="ruby-string">&quot;&gt;
+      &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+       &lt;str name=&quot;</span><span class="ruby-identifier">stream</span>.<span class="ruby-identifier">contentType</span><span class="ruby-string">&quot;&gt;application/json&lt;/str&gt;
+     &lt;/lst&gt;
+&lt;/requestHandler&gt;
+
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">update</span><span class="ruby-operator">/</span><span class="ruby-identifier">csv</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">CSVRequestHandler</span><span class="ruby-string">&quot;&gt;
+      &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+       &lt;str name=&quot;</span><span class="ruby-identifier">stream</span>.<span class="ruby-identifier">contentType</span><span class="ruby-string">&quot;&gt;application/csv&lt;/str&gt;
+     &lt;/lst&gt;
+&lt;/requestHandler&gt;
+
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">update</span><span class="ruby-operator">/</span><span class="ruby-identifier">extract</span><span class="ruby-string">&quot; 
+                startup=&quot;</span><span class="ruby-identifier">lazy</span><span class="ruby-string">&quot;
+                class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">extraction</span>.<span class="ruby-constant">ExtractingRequestHandler</span><span class="ruby-string">&quot; &gt;
+  &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">lowernames</span><span class="ruby-string">&quot;&gt;true&lt;/str&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">uprefix</span><span class="ruby-string">&quot;&gt;ignored_&lt;/str&gt;
+
+    &lt;!-- capture link hrefs but ignore div attributes --&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">captureAttr</span><span class="ruby-string">&quot;&gt;true&lt;/str&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">fmap</span>.<span class="ruby-identifier">a</span><span class="ruby-string">&quot;&gt;links&lt;/str&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">fmap</span>.<span class="ruby-identifier">div</span><span class="ruby-string">&quot;&gt;ignored_&lt;/str&gt;
+  &lt;/lst&gt;
+&lt;/requestHandler&gt;
+
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">analysis</span><span class="ruby-operator">/</span><span class="ruby-identifier">field</span><span class="ruby-string">&quot; 
+                startup=&quot;</span><span class="ruby-identifier">lazy</span><span class="ruby-string">&quot;
+                class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">FieldAnalysisRequestHandler</span><span class="ruby-string">&quot; /&gt;
+
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">analysis</span><span class="ruby-operator">/</span><span class="ruby-identifier">document</span><span class="ruby-string">&quot; 
+                class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">DocumentAnalysisRequestHandler</span><span class="ruby-string">&quot; 
+                startup=&quot;</span><span class="ruby-identifier">lazy</span><span class="ruby-string">&quot; /&gt;
+
+&lt;!-- ping/healthcheck --&gt;
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">admin</span><span class="ruby-operator">/</span><span class="ruby-identifier">ping</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">PingRequestHandler</span><span class="ruby-string">&quot;&gt;
+  &lt;lst name=&quot;</span><span class="ruby-identifier">invariants</span><span class="ruby-string">&quot;&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">q</span><span class="ruby-string">&quot;&gt;solrpingquery&lt;/str&gt;
+  &lt;/lst&gt;
+  &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">echoParams</span><span class="ruby-string">&quot;&gt;all&lt;/str&gt;
+  &lt;/lst&gt;
+&lt;/requestHandler&gt;
+
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">debug</span><span class="ruby-operator">/</span><span class="ruby-identifier">dump</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">DumpRequestHandler</span><span class="ruby-string">&quot; &gt;
+  &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+   &lt;str name=&quot;</span><span class="ruby-identifier">echoParams</span><span class="ruby-string">&quot;&gt;explicit&lt;/str&gt; 
+   &lt;str name=&quot;</span><span class="ruby-identifier">echoHandler</span><span class="ruby-string">&quot;&gt;true&lt;/str&gt;
+  &lt;/lst&gt;
+&lt;/requestHandler&gt;
+
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">replication</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">ReplicationHandler</span><span class="ruby-string">&quot; &gt; 
+&lt;/requestHandler&gt;
+
+&lt;searchComponent name=&quot;</span><span class="ruby-identifier">spellcheck</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">SpellCheckComponent</span><span class="ruby-string">&quot;&gt;
+
+  &lt;str name=&quot;</span><span class="ruby-identifier">queryAnalyzerFieldType</span><span class="ruby-string">&quot;&gt;textSpell&lt;/str&gt;
+
+  &lt;!-- Multiple &quot;</span><span class="ruby-constant">Spell</span> <span class="ruby-constant">Checkers</span><span class="ruby-string">&quot; can be declared and used by this
+       component
+    --&gt;
+
+  &lt;!-- a spellchecker built from a field of the main index --&gt;
+  &lt;lst name=&quot;</span><span class="ruby-identifier">spellchecker</span><span class="ruby-string">&quot;&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">name</span><span class="ruby-string">&quot;&gt;default&lt;/str&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">field</span><span class="ruby-string">&quot;&gt;name&lt;/str&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">classname</span><span class="ruby-string">&quot;&gt;solr.DirectSolrSpellChecker&lt;/str&gt;
+    &lt;!-- the spellcheck distance measure used, the default is the internal levenshtein --&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">distanceMeasure</span><span class="ruby-string">&quot;&gt;internal&lt;/str&gt;
+    &lt;!-- minimum accuracy needed to be considered a valid spellcheck suggestion --&gt;
+    &lt;float name=&quot;</span><span class="ruby-identifier">accuracy</span><span class="ruby-node">&quot;&gt;0.5&lt;/float&gt;
+    &lt;!-- the maximum #edits we consider when enumerating terms: can be 1 or 2 --&gt;
+    &lt;int name=&quot;</span><span class="ruby-identifier">maxEdits</span><span class="ruby-string">&quot;&gt;2&lt;/int&gt;
+    &lt;!-- the minimum shared prefix when enumerating terms --&gt;
+    &lt;int name=&quot;</span><span class="ruby-identifier">minPrefix</span><span class="ruby-string">&quot;&gt;1&lt;/int&gt;
+    &lt;!-- maximum number of inspections per result. --&gt;
+    &lt;int name=&quot;</span><span class="ruby-identifier">maxInspections</span><span class="ruby-string">&quot;&gt;5&lt;/int&gt;
+    &lt;!-- minimum length of a query term to be considered for correction --&gt;
+    &lt;int name=&quot;</span><span class="ruby-identifier">minQueryLength</span><span class="ruby-string">&quot;&gt;4&lt;/int&gt;
+    &lt;!-- maximum threshold of documents a query term can appear to be considered for correction --&gt;
+    &lt;float name=&quot;</span><span class="ruby-identifier">maxQueryFrequency</span><span class="ruby-string">&quot;&gt;0.01&lt;/float&gt;
+    &lt;!-- uncomment this to require suggestions to occur in 1% of the documents
+      &lt;float name=&quot;</span><span class="ruby-identifier">thresholdTokenFrequency</span><span class="ruby-string">&quot;&gt;.01&lt;/float&gt;
+    --&gt;
+  &lt;/lst&gt;
+
+  &lt;!-- a spellchecker that can break or combine words.  See &quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">spell</span><span class="ruby-string">&quot; handler below for usage --&gt;
+  &lt;lst name=&quot;</span><span class="ruby-identifier">spellchecker</span><span class="ruby-string">&quot;&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">name</span><span class="ruby-string">&quot;&gt;wordbreak&lt;/str&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">classname</span><span class="ruby-string">&quot;&gt;solr.WordBreakSolrSpellChecker&lt;/str&gt;      
+    &lt;str name=&quot;</span><span class="ruby-identifier">field</span><span class="ruby-string">&quot;&gt;name&lt;/str&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">combineWords</span><span class="ruby-string">&quot;&gt;true&lt;/str&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">breakWords</span><span class="ruby-string">&quot;&gt;true&lt;/str&gt;
+    &lt;int name=&quot;</span><span class="ruby-identifier">maxChanges</span><span class="ruby-string">&quot;&gt;10&lt;/int&gt;
+  &lt;/lst&gt;
+&lt;/searchComponent&gt;
+
+&lt;searchComponent name=&quot;</span><span class="ruby-identifier">tvComponent</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">TermVectorComponent</span><span class="ruby-string">&quot;/&gt;
+
+&lt;searchComponent name=&quot;</span><span class="ruby-identifier">terms</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">TermsComponent</span><span class="ruby-string">&quot;/&gt;
+
+&lt;searchComponent class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">HighlightComponent</span><span class="ruby-string">&quot; name=&quot;</span><span class="ruby-identifier">highlight</span><span class="ruby-string">&quot;&gt;
+  &lt;highlighting&gt;
+    &lt;!-- Configure the standard fragmenter --&gt;
+    &lt;!-- This could most likely be commented out in the &quot;</span><span class="ruby-identifier">default</span><span class="ruby-string">&quot; case --&gt;
+    &lt;fragmenter name=&quot;</span><span class="ruby-identifier">gap</span><span class="ruby-string">&quot; 
+                default=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot;
+                class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">highlight</span>.<span class="ruby-constant">GapFragmenter</span><span class="ruby-string">&quot;&gt;
+      &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+        &lt;int name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">fragsize</span><span class="ruby-string">&quot;&gt;100&lt;/int&gt;
+      &lt;/lst&gt;
+    &lt;/fragmenter&gt;
+
+    &lt;!-- A regular-expression-based fragmenter 
+         (for sentence extraction) 
+      --&gt;
+    &lt;fragmenter name=&quot;</span><span class="ruby-identifier">regex</span><span class="ruby-string">&quot; 
+                class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">highlight</span>.<span class="ruby-constant">RegexFragmenter</span><span class="ruby-string">&quot;&gt;
+      &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+        &lt;!-- slightly smaller fragsizes work better because of slop --&gt;
+        &lt;int name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">fragsize</span><span class="ruby-string">&quot;&gt;70&lt;/int&gt;
+        &lt;!-- allow 50% slop on fragment sizes --&gt;
+        &lt;float name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">regex</span>.<span class="ruby-identifier">slop</span><span class="ruby-string">&quot;&gt;0.5&lt;/float&gt;
+        &lt;!-- a basic sentence pattern --&gt;
+        &lt;str name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">regex</span>.<span class="ruby-identifier">pattern</span><span class="ruby-string">&quot;&gt;[-\w ,/\n\&amp;quot;&amp;apos;]{20,200}&lt;/str&gt;
+      &lt;/lst&gt;
+    &lt;/fragmenter&gt;
+
+    &lt;!-- Configure the standard formatter --&gt;
+    &lt;formatter name=&quot;</span><span class="ruby-identifier">html</span><span class="ruby-string">&quot; 
+               default=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot;
+               class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">highlight</span>.<span class="ruby-constant">HtmlFormatter</span><span class="ruby-string">&quot;&gt;
+      &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+        &lt;str name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">simple</span>.<span class="ruby-identifier">pre</span><span class="ruby-string">&quot;&gt;&lt;![CDATA[&lt;em&gt;]]&gt;&lt;/str&gt;
+        &lt;str name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">simple</span>.<span class="ruby-identifier">post</span><span class="ruby-string">&quot;&gt;&lt;![CDATA[&lt;/em&gt;]]&gt;&lt;/str&gt;
+      &lt;/lst&gt;
+    &lt;/formatter&gt;
+
+    &lt;!-- Configure the standard encoder --&gt;
+    &lt;encoder name=&quot;</span><span class="ruby-identifier">html</span><span class="ruby-string">&quot; 
+             class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">highlight</span>.<span class="ruby-constant">HtmlEncoder</span><span class="ruby-string">&quot; /&gt;
+
+    &lt;!-- Configure the standard fragListBuilder --&gt;
+    &lt;fragListBuilder name=&quot;</span><span class="ruby-identifier">simple</span><span class="ruby-string">&quot; 
+                     class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">highlight</span>.<span class="ruby-constant">SimpleFragListBuilder</span><span class="ruby-string">&quot;/&gt;
+
+    &lt;!-- Configure the single fragListBuilder --&gt;
+    &lt;fragListBuilder name=&quot;</span><span class="ruby-identifier">single</span><span class="ruby-string">&quot; 
+                     class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">highlight</span>.<span class="ruby-constant">SingleFragListBuilder</span><span class="ruby-string">&quot;/&gt;
+
+    &lt;!-- Configure the weighted fragListBuilder --&gt;
+    &lt;fragListBuilder name=&quot;</span><span class="ruby-identifier">weighted</span><span class="ruby-string">&quot; 
+                     default=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot;
+                     class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">highlight</span>.<span class="ruby-constant">WeightedFragListBuilder</span><span class="ruby-string">&quot;/&gt;
+
+    &lt;!-- default tag FragmentsBuilder --&gt;
+    &lt;fragmentsBuilder name=&quot;</span><span class="ruby-identifier">default</span><span class="ruby-string">&quot; 
+                      default=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot;
+                      class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">highlight</span>.<span class="ruby-constant">ScoreOrderFragmentsBuilder</span><span class="ruby-string">&quot;&gt;
+      &lt;!-- 
+      &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+        &lt;str name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">multiValuedSeparatorChar</span><span class="ruby-string">&quot;&gt;/&lt;/str&gt;
+      &lt;/lst&gt;
+      --&gt;
+    &lt;/fragmentsBuilder&gt;
+
+    &lt;!-- multi-colored tag FragmentsBuilder --&gt;
+    &lt;fragmentsBuilder name=&quot;</span><span class="ruby-identifier">colored</span><span class="ruby-string">&quot; 
+                      class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">highlight</span>.<span class="ruby-constant">ScoreOrderFragmentsBuilder</span><span class="ruby-string">&quot;&gt;
+      &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+        &lt;str name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">tag</span>.<span class="ruby-identifier">pre</span><span class="ruby-string">&quot;&gt;&lt;![CDATA[
+             &lt;b style=&quot;</span><span class="ruby-identifier">background</span><span class="ruby-operator">:</span><span class="ruby-identifier">yellow</span><span class="ruby-string">&quot;&gt;,&lt;b style=&quot;</span><span class="ruby-identifier">background</span><span class="ruby-operator">:</span><span class="ruby-identifier">lawgreen</span><span class="ruby-string">&quot;&gt;,
+             &lt;b style=&quot;</span><span class="ruby-identifier">background</span><span class="ruby-operator">:</span><span class="ruby-identifier">aquamarine</span><span class="ruby-string">&quot;&gt;,&lt;b style=&quot;</span><span class="ruby-identifier">background</span><span class="ruby-operator">:</span><span class="ruby-identifier">magenta</span><span class="ruby-string">&quot;&gt;,
+             &lt;b style=&quot;</span><span class="ruby-identifier">background</span><span class="ruby-operator">:</span><span class="ruby-identifier">palegreen</span><span class="ruby-string">&quot;&gt;,&lt;b style=&quot;</span><span class="ruby-identifier">background</span><span class="ruby-operator">:</span><span class="ruby-identifier">coral</span><span class="ruby-string">&quot;&gt;,
+             &lt;b style=&quot;</span><span class="ruby-identifier">background</span><span class="ruby-operator">:</span><span class="ruby-identifier">wheat</span><span class="ruby-string">&quot;&gt;,&lt;b style=&quot;</span><span class="ruby-identifier">background</span><span class="ruby-operator">:</span><span class="ruby-identifier">khaki</span><span class="ruby-string">&quot;&gt;,
+             &lt;b style=&quot;</span><span class="ruby-identifier">background</span><span class="ruby-operator">:</span><span class="ruby-identifier">lime</span><span class="ruby-string">&quot;&gt;,&lt;b style=&quot;</span><span class="ruby-identifier">background</span><span class="ruby-operator">:</span><span class="ruby-identifier">deepskyblue</span><span class="ruby-string">&quot;&gt;]]&gt;&lt;/str&gt;
+        &lt;str name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">tag</span>.<span class="ruby-identifier">post</span><span class="ruby-string">&quot;&gt;&lt;![CDATA[&lt;/b&gt;]]&gt;&lt;/str&gt;
+      &lt;/lst&gt;
+    &lt;/fragmentsBuilder&gt;
+
+    &lt;boundaryScanner name=&quot;</span><span class="ruby-identifier">default</span><span class="ruby-string">&quot; 
+                     default=&quot;</span><span class="ruby-keyword">true</span><span class="ruby-string">&quot;
+                     class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">highlight</span>.<span class="ruby-constant">SimpleBoundaryScanner</span><span class="ruby-string">&quot;&gt;
+      &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+        &lt;str name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">bs</span>.<span class="ruby-identifier">maxScan</span><span class="ruby-string">&quot;&gt;10&lt;/str&gt;
+        &lt;str name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">bs</span>.<span class="ruby-identifier">chars</span><span class="ruby-node">&quot;&gt;.,!? &amp;#9;&amp;#10;&amp;#13;&lt;/str&gt;
+      &lt;/lst&gt;
+    &lt;/boundaryScanner&gt;
+
+    &lt;boundaryScanner name=&quot;</span><span class="ruby-identifier">breakIterator</span><span class="ruby-string">&quot; 
+                     class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">highlight</span>.<span class="ruby-constant">BreakIteratorBoundaryScanner</span><span class="ruby-string">&quot;&gt;
+      &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+        &lt;!-- type should be one of CHARACTER, WORD(default), LINE and SENTENCE --&gt;
+        &lt;str name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">bs</span>.<span class="ruby-identifier">type</span><span class="ruby-string">&quot;&gt;WORD&lt;/str&gt;
+        &lt;!-- language and country are used when constructing Locale object.  --&gt;
+        &lt;!-- And the Locale object will be used when getting instance of BreakIterator --&gt;
+        &lt;str name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">bs</span>.<span class="ruby-identifier">language</span><span class="ruby-string">&quot;&gt;en&lt;/str&gt;
+        &lt;str name=&quot;</span><span class="ruby-identifier">hl</span>.<span class="ruby-identifier">bs</span>.<span class="ruby-identifier">country</span><span class="ruby-string">&quot;&gt;US&lt;/str&gt;
+      &lt;/lst&gt;
+    &lt;/boundaryScanner&gt;
+  &lt;/highlighting&gt;
+&lt;/searchComponent&gt;
+
+&lt;requestHandler class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-constant">MoreLikeThisHandler</span><span class="ruby-string">&quot; name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">mlt</span><span class="ruby-string">&quot;&gt;
+  &lt;lst name=&quot;</span><span class="ruby-identifier">defaults</span><span class="ruby-string">&quot;&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">mlt</span>.<span class="ruby-identifier">mintf</span><span class="ruby-string">&quot;&gt;1&lt;/str&gt;
+    &lt;str name=&quot;</span><span class="ruby-identifier">mlt</span>.<span class="ruby-identifier">mindf</span><span class="ruby-string">&quot;&gt;2&lt;/str&gt;
+  &lt;/lst&gt;
+&lt;/requestHandler&gt;
+
+&lt;!-- Admin Handlers - This will register all the standard admin RequestHandlers. --&gt;
+&lt;requestHandler name=&quot;</span><span class="ruby-operator">/</span><span class="ruby-identifier">admin</span><span class="ruby-operator">/</span><span class="ruby-string">&quot; class=&quot;</span><span class="ruby-identifier">solr</span>.<span class="ruby-identifier">admin</span>.<span class="ruby-constant">AdminHandlers</span><span class="ruby-string">&quot; /&gt;
+</span></pre>
+
+<p>&lt;/config&gt;</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,5 +1,9 @@
 <% provide(:title, 'Ingredient') %>
-<h1><%= @ingredient.inci_name %></h1>
+<div class="container">
+  <div class="text-center">
+	 <h1><%= @ingredient.inci_name %></h1>
+  </div>
+</div>
 
 <% if admin_signed_in? %>
   <div class="adminview">

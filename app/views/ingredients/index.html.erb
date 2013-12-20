@@ -1,4 +1,9 @@
-+<h1>Ingredients</h1>
+<% provide(:title, 'Ingredients') %>
+<div class="container">
+  <div class="text-center">
+	 <h1>Ingredients</h1>
+  </div>
+</div>
 
 <% if admin_signed_in? %>
     <div class="adminview">
@@ -7,18 +12,17 @@
     </div>
 <%end %>
 
-<div class="search">
-
-
+<div class="container">
   <%= form_tag search_ingredients_path, :method => "get" do %>
-      <%= label_tag(:q, "Search:") %>
-      <%= text_field_tag :search, params[:search] %>
-      <%= submit_tag "Search", :name => nil %>
+      <%= label_tag 'search', 'Search:', class: "col-lg-1 control-label" %>
+		<div class="col-lg-5">
+		  <%= text_field_tag 'search', params[:search], class: "form-control" %>
+		  <%= submit_tag "Search", :name => nil, class: "btn btn-primary" %>
+		</div>
   <% end %>
-
 </div>
 
-+<%= render :partial => "ingredient", :collection => @ingredients %>
+<%= render :partial => "ingredient", :collection => @ingredients %>
 
 <%= content_for :head, auto_discovery_link_tag(:atom, ingredients_url(format: "atom")) %>
 
